@@ -1,0 +1,2 @@
+ninja: Entering directory `Z:\AndroidStudioProjects\Skity\example\Android\app\.cxx\cmake\debug\x86'
+ninja: no work to do.

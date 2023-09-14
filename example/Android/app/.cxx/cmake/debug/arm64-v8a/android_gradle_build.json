@@ -1,0 +1,1663 @@
+{
+  "stringTable": {
+    "0": "Z:/AndroidStudioProjects/Skity/example/Android/app/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DGLDemoJni_EXPORTS -IZ:/AndroidStudioProjects/Skity/include -IZ:/AndroidStudioProjects/Skity/build/include -IZ:/AndroidStudioProjects/Skity/third_party/glm -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++ -std=c++14 -O0 -fno-limit-debug-info -fPIC",
+    "2": "--target=aarch64-none-linux-android21 --gcc-toolchain=Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DENABLE_TEXT_RENDER=1 -Dskity_EXPORTS -I../../../../../../../ -I../../../../../../../build -I../../../../../../../include -I../../../../../../../build/include -I../../../../../../../third_party/OpenGL -I../../../../../../../build/third_party/freetype/include -I../../../../../../../third_party/freetype/include -I../../../../../../../third_party/glm -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++ -std=c++14 -fPIC -O0 -fno-limit-debug-info -fPIC -fno-exceptions -std=gnu++14",
+    "3": "--target=aarch64-none-linux-android21 --gcc-toolchain=Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DFT2_BUILD_LIBRARY -I../../../../../../../build/third_party/freetype/include -I../../../../../../../third_party/freetype/include -I../../../../../../../build/third_party/freetype/include/freetype/config -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -fPIC -O0 -fno-limit-debug-info -fPIC -fvisibility=hidden",
+    "4": "--target=aarch64-none-linux-android21 --gcc-toolchain=Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DENABLE_TEXT_RENDER=1 -I../../../../../../../third_party/pugixml/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++ -std=c++14 -fPIC -O0 -fno-limit-debug-info -fPIC -std=gnu++14",
+    "5": "null"
+  },
+  "buildFiles": [
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
+    "Z:\\android\\sdk\\ndk\\19.2.5345600\\build\\cmake\\android.toolchain.cmake",
+    "Z:\\android\\sdk\\ndk\\19.2.5345600\\build\\cmake\\platforms.cmake",
+    "Z:\\AndroidStudioProjects\\Skity\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\cmake\\Platform.cmake",
+    "Z:\\AndroidStudioProjects\\Skity\\cmake\\CommonDep.cmake",
+    "Z:\\AndroidStudioProjects\\Skity\\cmake\\Options.cmake",
+    "Z:\\AndroidStudioProjects\\Skity\\cmake\\Shader.cmake",
+    "Z:\\AndroidStudioProjects\\Skity\\cmake\\ThirdPartyDep.cmake",
+    "Z:\\AndroidStudioProjects\\Skity\\cmake\\Config.cmake.in",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\builds\\cmake\\FindHarfBuzz.cmake",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\builds\\cmake\\FindBrotliDec.cmake",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\cmake\\cmake_uninstall.cmake.in",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\scripts\\pugixml-config.cmake.in",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\scripts\\pugixml.pc.in",
+    "Z:\\AndroidStudioProjects\\Skity\\include\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\config.hpp.in",
+    "Z:\\AndroidStudioProjects\\Skity\\src\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe  -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "NightlyCoverage-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyCoverage",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyCoverage",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyCoverage",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyCoverage.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "uninstall-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" uninstall",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "uninstall",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\glm\\CMakeFiles\\uninstall",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\glm\\CMakeFiles\\uninstall.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlyUpdate-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyUpdate",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyUpdate",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyUpdate",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyUpdate.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlyConfigure-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyConfigure",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyConfigure",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyConfigure",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyConfigure.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ContinuousTest-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousTest",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousTest",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousTest",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousTest.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "Experimental-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Experimental",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "Experimental",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Experimental",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Experimental.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ContinuousSubmit-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousSubmit",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousSubmit",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousSubmit",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousSubmit.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ContinuousCoverage-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousCoverage",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousCoverage",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousCoverage",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousCoverage.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlyTest-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyTest",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyTest",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyTest",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyTest.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ContinuousConfigure-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousConfigure",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousConfigure",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousConfigure",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousConfigure.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ContinuousMemCheck-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousMemCheck",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousMemCheck",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousMemCheck",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousMemCheck.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlySubmit-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlySubmit",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlySubmit",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlySubmit",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlySubmit.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ExperimentalStart-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalStart",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalStart",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalStart",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalStart.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "Continuous-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Continuous",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "Continuous",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Continuous",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Continuous.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "Nightly-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Nightly",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "Nightly",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Nightly",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Nightly.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ContinuousUpdate-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousUpdate",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousUpdate",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousUpdate",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousUpdate.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "GLDemoJni-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" GLDemoJni",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "GLDemoJni",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\GLDemoJNI.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\example\\example.cc",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libGLDemoJni.so",
+      "runtimeFiles": [
+        "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libskity.so"
+      ]
+    },
+    "ContinuousStart-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousStart",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousStart",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousStart",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousStart.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlyMemCheck-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyMemCheck",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyMemCheck",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyMemCheck",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyMemCheck.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ExperimentalCoverage-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalCoverage",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalCoverage",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalCoverage",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalCoverage.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlyBuild-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyBuild",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyBuild",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyBuild",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyBuild.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ExperimentalBuild-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalBuild",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalBuild",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalBuild",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalBuild.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "freetype-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" freetype",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "freetype",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\autofit\\autofit.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftbase.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftbbox.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftbdf.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftbitmap.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftcid.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftfstype.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftgasp.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftglyph.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftgxval.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftinit.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftmm.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftotval.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftpatent.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftpfr.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftstroke.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftsynth.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\fttype1.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftwinfnt.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\bdf\\bdf.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\bzip2\\ftbzip2.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\cache\\ftcache.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\cff\\cff.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\cid\\type1cid.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\gzip\\ftgzip.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\lzw\\ftlzw.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\pcf\\pcf.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\pfr\\pfr.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\psaux\\psaux.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\pshinter\\pshinter.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\psnames\\psnames.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\raster\\raster.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\sdf\\sdf.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\sfnt\\sfnt.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\smooth\\smooth.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\svg\\svg.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\truetype\\truetype.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\type1\\type1.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\type42\\type42.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\winfonts\\winfnt.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\builds\\unix\\ftsystem.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\src\\base\\ftdebug.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\freetype.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftadvanc.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftbbox.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftbdf.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftbitmap.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftbzip2.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftcache.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftchapters.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftcid.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftcolor.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftdriver.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\fterrdef.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\fterrors.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftfntfmt.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftgasp.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftglyph.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftgxval.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftgzip.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftimage.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftincrem.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftlcdfil.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftlist.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftlogging.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftlzw.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftmac.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftmm.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftmodapi.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftmoderr.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftotval.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftoutln.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftparams.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftpfr.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftrender.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftsizes.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftsnames.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftstroke.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftsynth.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftsystem.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\fttrigon.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\fttypes.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ftwinfnt.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\otsvg.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\t1tables.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\ttnameid.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\tttables.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\tttags.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\ft2build.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\config\\ftconfig.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\config\\ftheader.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\config\\ftmodule.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\config\\ftoption.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\config\\ftstdlib.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\config\\integer-types.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\config\\mac-support.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\config\\public-macros.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\autohint.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\cffotypes.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\cfftypes.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\compiler-macros.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftcalc.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftdebug.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftdrv.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftgloadr.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\fthash.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftmemory.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftmmtypes.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftobjs.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftpsprop.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftrfork.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftserv.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftstream.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\fttrace.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\ftvalid.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\psaux.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\pshints.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\sfnt.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\svginterface.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\t1types.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\tttypes.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\include\\freetype\\internal\\wofftypes.h",
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\freetype\\libfreetyped.a"
+    },
+    "ExperimentalConfigure-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalConfigure",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalConfigure",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalConfigure",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalConfigure.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlyStart-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyStart",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyStart",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyStart",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyStart.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ExperimentalSubmit-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalSubmit",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalSubmit",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalSubmit",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalSubmit.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ContinuousBuild-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousBuild",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousBuild",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousBuild",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousBuild.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ExperimentalTest-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalTest",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalTest",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalTest",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalTest.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ExperimentalMemCheck-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalMemCheck",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalMemCheck",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalMemCheck",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalMemCheck.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ExperimentalUpdate-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalUpdate",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalUpdate",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalUpdate",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalUpdate.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlyMemoryCheck-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyMemoryCheck",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyMemoryCheck",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyMemoryCheck",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyMemoryCheck.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "skity-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" skity",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "skity",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\dash_path_effect.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\discrete_path_effect.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\gradient_shader.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\mask_filter.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\path_effect.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\pixmap_shader.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\shader.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\geometry\\conic.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\geometry\\contour_measure.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\geometry\\geometry.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\geometry\\rect.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\geometry\\rrect.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\graphic\\bitmap.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\graphic\\color.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\graphic\\paint.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\graphic\\path.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\graphic\\path_measure.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\io\\data.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\io\\pixmap.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\logging.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\canvas.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\text\\font_texture.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\texture_atlas.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\text\\ft_library_wrap.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\text\\text_blob.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\text\\text_run.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\text\\typeface.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\text\\utf.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_canvas.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_canvas_state.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_draw.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_geometry_raster.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_mesh.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_path_raster.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_path_visitor.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_render_target.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_canvas.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_font_texture.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_interface.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_render_target.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_renderer.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_shader.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_texture.cc",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\io\\data.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\io\\pixmap.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\effect\\mask_filter.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\effect\\path_effect.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\effect\\shader.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\geometry\\point.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\geometry\\rect.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\geometry\\rrect.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\gpu\\gpu_context.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\gpu\\gpu_vk_context.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\graphic\\bitmap.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\graphic\\color.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\graphic\\paint.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\graphic\\path.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\macros.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\render\\canvas.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\skity.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\text\\text_blob.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\text\\text_run.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\text\\typeface.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\text\\utf.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\dash_path_effect.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\discrete_path_effect.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\gradient_shader.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\effect\\pixmap_shader.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\geometry\\conic.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\geometry\\contour_measure.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\geometry\\geometry.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\geometry\\math.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\geometry\\point_priv.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\graphic\\path_measure.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\graphic\\path_priv.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\logging.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\text\\font_texture.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\texture_atlas.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\text\\ft_library_wrap.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\utils\\lazy.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_canvas.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_canvas_state.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_draw.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_font_texture.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_geometry_raster.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_mesh.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_path_raster.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_path_visitor.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_render_target.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_renderer.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\hw_texture.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_canvas.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_font_texture.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_interface.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_render_target.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_renderer.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_shader.hpp",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "Z:\\AndroidStudioProjects\\Skity\\src\\render\\hw\\gl\\gl_texture.hpp",
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libskity.so",
+      "runtimeFiles": []
+    },
+    "pugixml-static-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" pugixml-static",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "pugixml-static",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\src\\pugixml.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\libpugixml.a"
+    }
+  },
+  "toolchains": {
+    "941764060": {
+      "cCompilerExecutable": "Z:\\android\\sdk\\ndk\\19.2.5345600\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "Z:\\android\\sdk\\ndk\\19.2.5345600\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cc",
+    "cpp"
+  ]
+}

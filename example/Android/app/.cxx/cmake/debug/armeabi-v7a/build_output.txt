@@ -1,0 +1,45 @@
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+Detecting C compiler ABI info
+Detecting C compiler ABI info - done
+Check for working C compiler: Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe - skipped
+Detecting C compile features
+Detecting C compile features - done
+Detecting CXX compiler ABI info
+Detecting CXX compiler ABI info - done
+Check for working CXX compiler: Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe - skipped
+Detecting CXX compile features
+Detecting CXX compile features - done
+Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+CMake Warning at Z:\AndroidStudioProjects\Skity\example\Android\app\src\main\jni\..\..\..\..\..\..\third_party\freetype\builds\cmake\FindHarfBuzz.cmake:99 (message):
+  Required version (2.0.0) is higher than found version ()
+Call Stack (most recent call first):
+  ../../../../../../third_party/freetype/CMakeLists.txt:258 (find_package)
+
+
+Found ZLIB: Z:/android/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/libz.a (found version "1.2.7") 
+Could NOT find PNG (missing: PNG_LIBRARY PNG_PNG_INCLUDE_DIR) 
+Could NOT find BZip2 (missing: BZIP2_LIBRARIES BZIP2_INCLUDE_DIR) 
+Could NOT find BrotliDec (missing: BROTLIDEC_INCLUDE_DIRS BROTLIDEC_LIBRARIES) 
+Looking for unistd.h
+Looking for unistd.h - found
+Looking for fcntl.h
+Looking for fcntl.h - found
+Z:/AndroidStudioProjects/Skity/shaders/hw_gl_fragment.glslZ:/AndroidStudioProjects/Skity/shaders/hw_gl_gs_fragment.glslZ:/AndroidStudioProjects/Skity/shaders/hw_gl_gs_geometry.glslZ:/AndroidStudioProjects/Skity/shaders/hw_gl_gs_vertex.glslZ:/AndroidStudioProjects/Skity/shaders/hw_gl_vertex.glslZ:/AndroidStudioProjects/Skity/shaders/vk_blur_effect.comp.spvZ:/AndroidStudioProjects/Skity/shaders/vk_blur_effect.frag.spvZ:/AndroidStudioProjects/Skity/shaders/vk_common.vert.spvZ:/AndroidStudioProjects/Skity/shaders/vk_gradient_color.frag.spvZ:/AndroidStudioProjects/Skity/shaders/vk_gs_common.vert.spvZ:/AndroidStudioProjects/Skity/shaders/vk_gs_geometry.geom.spvZ:/AndroidStudioProjects/Skity/shaders/vk_image_color.frag.spvZ:/AndroidStudioProjects/Skity/shaders/vk_stencil_discard.frag.spvZ:/AndroidStudioProjects/Skity/shaders/vk_uniform_color.frag.spv
+GLM: Version 0.9.9.9
+Configuring done
+CMake Deprecation Warning:
+  The 'cmake-server(7)' is deprecated.  Please port clients to use the
+  'cmake-file-api(7)' instead.
+
