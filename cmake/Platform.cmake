@@ -6,8 +6,8 @@ elseif(WIN32)
   set(BUILD_SHARED_LIBS TRUE)
 
   # specify dll outpu directory
-  set(SKITY_DLL_DIR ${CMAKE_CURRENT_BINARY_DIR})
-  set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${SKITY_DLL_DIR})
+  #set(SKITY_DLL_DIR ${CMAKE_CURRENT_BINARY_DIR})
+  #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${SKITY_DLL_DIR})
 
   target_compile_options(
     skity

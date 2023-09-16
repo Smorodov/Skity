@@ -1,9 +1,14 @@
-cmake_minimum_required(VERSION 3.10.0)
+cmake_minimum_required(VERSION 3.2)
+
+if(WIN32)
+set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/build)
+set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/build)
+endif()
 
 project(Skity)
 
 set(SKITY_VERSION 0.1.0)
-
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
 
@@ -28,6 +33,8 @@ else()
 endif()
 
 
+
+
 # public header include
 target_include_directories(skity PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(skity PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
@@ -41,8 +48,19 @@ target_include_directories(
 
 add_library(skity::skity ALIAS skity)
 
+
+add_subdirectory(sandbox)
+set_target_properties( sandbox PROPERTIES  VS_DEBUGGER_WORKING_DIRECTORY "$<TARGET_FILE_DIR:sandbox>")
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT sandbox)
+file(COPY ${PROJECT_SOURCE_DIR}/sandbox/Resources DESTINATION ${CMAKE_SOURCE_DIR}/build/Debug)
+file(COPY ${PROJECT_SOURCE_DIR}/sandbox/Resources DESTINATION ${CMAKE_SOURCE_DIR}/build/Release)
+
+
+if(WIN32)
 # default config
 include(GNUInstallDirs)
+endif()
+
 # platform
 include(cmake/Platform.cmake)
 # options
@@ -115,7 +133,6 @@ if(${BUILD_EXAMPLE})
   add_subdirectory(example)
 endif()
 
-  add_subdirectory(sandbox)
 
 # package config file
 include(CMakePackageConfigHelpers)
