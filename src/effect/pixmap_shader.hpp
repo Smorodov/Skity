@@ -3,18 +3,20 @@
 
 #include <skity/effect/shader.hpp>
 
-namespace skity {
+namespace skity
+{
 
-class PixmapShader : public Shader {
- public:
-  PixmapShader(std::shared_ptr<Pixmap> pixmap);
-  ~PixmapShader() override = default;
+	class PixmapShader : public Shader
+	{
+		public:
+			PixmapShader(std::shared_ptr<Pixmap> pixmap);
+			~PixmapShader() override = default;
 
-  std::shared_ptr<Pixmap> asImage() const override;
+			std::shared_ptr<Pixmap> asImage() const override;
 
- private:
-  std::shared_ptr<Pixmap> pixmap_;
-};
+		private:
+			std::shared_ptr<Pixmap> pixmap_;
+	};
 
 }  // namespace skity
 

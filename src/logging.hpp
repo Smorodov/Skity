@@ -9,13 +9,15 @@
 
 #ifdef SKITY_LOG
 
-namespace skity {
-class Log {
- public:
-  static void Init();
+namespace skity
+{
+	class Log
+	{
+		public:
+			static void Init();
 
-  static std::shared_ptr<spdlog::logger> GetLogger();
-};
+			static std::shared_ptr<spdlog::logger> GetLogger();
+	};
 }  // namespace skity
 
 #define LOG_INFO(...) skity::Log::GetLogger()->info(__VA_ARGS__)

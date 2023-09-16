@@ -8,50 +8,56 @@
 
 #include "src/render/texture_atlas.hpp"
 
-namespace skity {
+namespace skity
+{
 
-class FontTexture : public TextureAtlas {
-  enum {
-    DEFAULT_SIZE = 512,
-  };
+	class FontTexture : public TextureAtlas
+	{
+			enum
+			{
+			    DEFAULT_SIZE = 512,
+			};
 
-  struct GlyphKey {
-    GlyphID id;
-    float font_size;
+			struct GlyphKey
+			{
+				GlyphID id;
+				float font_size;
 
-    GlyphKey() = default;
-    ~GlyphKey() = default;
+				GlyphKey() = default;
+				~GlyphKey() = default;
 
-    bool operator==(GlyphKey const& other) const;
-  };
+				bool operator==(GlyphKey const& other) const;
+			};
 
-  struct GlyphKeyCompare {
-    bool operator()(GlyphKey const& lhs, GlyphKey const& rhs) const {
-      if (lhs.id < rhs.id) {
-        return true;
-      }
+			struct GlyphKeyCompare
+			{
+				bool operator()(GlyphKey const& lhs, GlyphKey const& rhs) const
+				{
+					if (lhs.id < rhs.id)
+					{
+						return true;
+					}
+					if (lhs.id == rhs.id)
+					{
+						return lhs.font_size < rhs.font_size;
+					}
+					return false;
+				}
+			};
 
-      if (lhs.id == rhs.id) {
-        return lhs.font_size < rhs.font_size;
-      }
+		public:
+			FontTexture(Typeface* typeface);
+			~FontTexture() override = default;
 
-      return false;
-    }
-  };
+			glm::ivec4 GetGlyphRegion(GlyphID glyph_id, float font_size);
 
- public:
-  FontTexture(Typeface* typeface);
-  ~FontTexture() override = default;
+		private:
+			glm::ivec4 GenerateGlyphRegion(GlyphKey const& key);
 
-  glm::ivec4 GetGlyphRegion(GlyphID glyph_id, float font_size);
-
- private:
-  glm::ivec4 GenerateGlyphRegion(GlyphKey const& key);
-
- private:
-  Typeface* typeface_;
-  std::map<GlyphKey, glm::ivec4, GlyphKeyCompare> glyph_regions_ = {};
-};
+		private:
+			Typeface* typeface_;
+			std::map<GlyphKey, glm::ivec4, GlyphKeyCompare> glyph_regions_ = {};
+	};
 
 }  // namespace skity
 

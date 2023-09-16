@@ -3,61 +3,65 @@
 
 #include "src/render/hw/vk/pipelines/static_pipeline.hpp"
 
-namespace skity {
+namespace skity
+{
 
-class StaticBlurPipeline : public StaticPipeline {
- public:
-  StaticBlurPipeline(bool use_gs, size_t push_const_size)
-      : StaticPipeline(use_gs, push_const_size) {}
-  ~StaticBlurPipeline() override = default;
+	class StaticBlurPipeline : public StaticPipeline
+	{
+		public:
+			StaticBlurPipeline(bool use_gs, size_t push_const_size)
+				: StaticPipeline(use_gs, push_const_size) {}
+			~StaticBlurPipeline() override = default;
 
-  void UploadGradientInfo(GradientInfo const& info, GPUVkContext* ctx,
-                          SKVkFrameBufferData* frame_buffer,
-                          VKMemoryAllocator* allocator) override;
+			void UploadGradientInfo(GradientInfo const& info, GPUVkContext* ctx,
+			                        SKVkFrameBufferData* frame_buffer,
+			                        VKMemoryAllocator* allocator) override;
 
-  void UploadImageTexture(VKTexture* texture, GPUVkContext* ctx,
-                          SKVkFrameBufferData* frame_buffer,
-                          VKMemoryAllocator* allocator) override;
+			void UploadImageTexture(VKTexture* texture, GPUVkContext* ctx,
+			                        SKVkFrameBufferData* frame_buffer,
+			                        VKMemoryAllocator* allocator) override;
 
-  void UploadBlurInfo(glm::ivec4 const& info, GPUVkContext* ctx,
-                      SKVkFrameBufferData* frame_buffer,
-                      VKMemoryAllocator* allocator) override;
+			void UploadBlurInfo(glm::ivec4 const& info, GPUVkContext* ctx,
+			                    SKVkFrameBufferData* frame_buffer,
+			                    VKMemoryAllocator* allocator) override;
 
- protected:
-  VkDescriptorSetLayout GenerateColorSetLayout(GPUVkContext* ctx) override;
+		protected:
+			VkDescriptorSetLayout GenerateColorSetLayout(GPUVkContext* ctx) override;
 
- private:
-  glm::vec4 bounds_info_ = {};
-  glm::ivec4 blur_info_ = {};
-};
+		private:
+			glm::vec4 bounds_info_ = {};
+			glm::ivec4 blur_info_ = {};
+	};
 
-class FinalBlurPipeline : public StaticBlurPipeline {
- public:
-  FinalBlurPipeline(bool use_gs, size_t push_const_size)
-      : StaticBlurPipeline(use_gs, push_const_size) {}
-  ~FinalBlurPipeline() override = default;
+	class FinalBlurPipeline : public StaticBlurPipeline
+	{
+		public:
+			FinalBlurPipeline(bool use_gs, size_t push_const_size)
+				: StaticBlurPipeline(use_gs, push_const_size) {}
+			~FinalBlurPipeline() override = default;
 
- protected:
-  VkPipelineColorBlendAttachmentState GetColorBlendState() override;
-};
+		protected:
+			VkPipelineColorBlendAttachmentState GetColorBlendState() override;
+	};
 
-class ComputeBlurPipeline : public ComputePipeline {
- public:
-  ComputeBlurPipeline() = default;
-  ~ComputeBlurPipeline() override = default;
+	class ComputeBlurPipeline : public ComputePipeline
+	{
+		public:
+			ComputeBlurPipeline() = default;
+			~ComputeBlurPipeline() override = default;
 
-  void UploadBlurInfo(glm::ivec4 const& info, GPUVkContext* ctx,
-                      SKVkFrameBufferData* frame_buffer,
-                      VKMemoryAllocator* allocator) override;
+			void UploadBlurInfo(glm::ivec4 const& info, GPUVkContext* ctx,
+			                    SKVkFrameBufferData* frame_buffer,
+			                    VKMemoryAllocator* allocator) override;
 
- protected:
-  VkDescriptorSetLayout CreateDescriptorSetLayout(GPUVkContext* ctx) override;
+		protected:
+			VkDescriptorSetLayout CreateDescriptorSetLayout(GPUVkContext* ctx) override;
 
-  void OnDispatch(VkCommandBuffer cmd, GPUVkContext* ctx) override;
+			void OnDispatch(VkCommandBuffer cmd, GPUVkContext* ctx) override;
 
- private:
-  glm::ivec4 blur_info_ = {};
-};
+		private:
+			glm::ivec4 blur_info_ = {};
+	};
 
 }  // namespace skity
 

@@ -3,82 +3,88 @@
 
 #include "src/render/hw/vk/pipelines/static_pipeline.hpp"
 
-namespace skity {
+namespace skity
+{
 
-class StaticGradientPipeline : public StaticPipeline {
- public:
-  StaticGradientPipeline(bool use_gs, size_t push_const_size)
-      : StaticPipeline(use_gs, push_const_size) {}
+	class StaticGradientPipeline : public StaticPipeline
+	{
+		public:
+			StaticGradientPipeline(bool use_gs, size_t push_const_size)
+				: StaticPipeline(use_gs, push_const_size) {}
 
-  ~StaticGradientPipeline() override = default;
+			~StaticGradientPipeline() override = default;
 
-  void UploadGradientInfo(GradientInfo const& info, GPUVkContext* ctx,
-                          SKVkFrameBufferData* frame_buffer,
-                          VKMemoryAllocator* allocator) override;
+			void UploadGradientInfo(GradientInfo const& info, GPUVkContext* ctx,
+			                        SKVkFrameBufferData* frame_buffer,
+			                        VKMemoryAllocator* allocator) override;
 
- protected:
-  VkDescriptorSetLayout GenerateColorSetLayout(GPUVkContext* ctx) override;
-};
+		protected:
+			VkDescriptorSetLayout GenerateColorSetLayout(GPUVkContext* ctx) override;
+	};
 
-class StencilDiscardGradientPipeline : public StaticGradientPipeline {
- public:
-  StencilDiscardGradientPipeline(bool use_gs, size_t push_const_size)
-      : StaticGradientPipeline(use_gs, push_const_size) {}
-  ~StencilDiscardGradientPipeline() override = default;
+	class StencilDiscardGradientPipeline : public StaticGradientPipeline
+	{
+		public:
+			StencilDiscardGradientPipeline(bool use_gs, size_t push_const_size)
+				: StaticGradientPipeline(use_gs, push_const_size) {}
+			~StencilDiscardGradientPipeline() override = default;
 
- protected:
-  VkPipelineDepthStencilStateCreateInfo GetDepthStencilStateCreateInfo()
-      override;
-};
+		protected:
+			VkPipelineDepthStencilStateCreateInfo GetDepthStencilStateCreateInfo()
+			override;
+	};
 
-class StencilClipGradientPipeline : public StaticGradientPipeline {
- public:
-  StencilClipGradientPipeline(bool use_gs, size_t push_const_size)
-      : StaticGradientPipeline(use_gs, push_const_size) {}
+	class StencilClipGradientPipeline : public StaticGradientPipeline
+	{
+		public:
+			StencilClipGradientPipeline(bool use_gs, size_t push_const_size)
+				: StaticGradientPipeline(use_gs, push_const_size) {}
 
-  ~StencilClipGradientPipeline() override = default;
+			~StencilClipGradientPipeline() override = default;
 
-  void UpdateStencilInfo(uint32_t reference, uint32_t compare_mask,
-                         uint32_t write_mask, GPUVkContext* ctx) override;
+			void UpdateStencilInfo(uint32_t reference, uint32_t compare_mask,
+			                       uint32_t write_mask, GPUVkContext* ctx) override;
 
- protected:
-  std::vector<VkDynamicState> GetDynamicStates() override;
-  VkPipelineDepthStencilStateCreateInfo GetDepthStencilStateCreateInfo()
-      override;
-};
+		protected:
+			std::vector<VkDynamicState> GetDynamicStates() override;
+			VkPipelineDepthStencilStateCreateInfo GetDepthStencilStateCreateInfo()
+			override;
+	};
 
-class StencilKeepGradientPipeline : public StaticGradientPipeline {
- public:
-  StencilKeepGradientPipeline(bool use_gs, size_t push_const_size)
-      : StaticGradientPipeline(use_gs, push_const_size) {}
-  ~StencilKeepGradientPipeline() override = default;
+	class StencilKeepGradientPipeline : public StaticGradientPipeline
+	{
+		public:
+			StencilKeepGradientPipeline(bool use_gs, size_t push_const_size)
+				: StaticGradientPipeline(use_gs, push_const_size) {}
+			~StencilKeepGradientPipeline() override = default;
 
- protected:
-  VkPipelineDepthStencilStateCreateInfo GetDepthStencilStateCreateInfo()
-      override;
-};
+		protected:
+			VkPipelineDepthStencilStateCreateInfo GetDepthStencilStateCreateInfo()
+			override;
+	};
 
-class GradientPipelineFamily : public RenderPipelineFamily {
- public:
-  GradientPipelineFamily() = default;
-  ~GradientPipelineFamily() override = default;
+	class GradientPipelineFamily : public RenderPipelineFamily
+	{
+		public:
+			GradientPipelineFamily() = default;
+			~GradientPipelineFamily() override = default;
 
- protected:
-  std::tuple<const char*, size_t> GetFragmentShaderInfo() override;
+		protected:
+			std::tuple<const char*, size_t> GetFragmentShaderInfo() override;
 
-  std::unique_ptr<AbsPipelineWrapper> CreateStaticPipeline(
-      GPUVkContext* ctx) override;
-  std::unique_ptr<AbsPipelineWrapper> CreateStencilDiscardPipeline(
-      GPUVkContext* ctx) override;
-  std::unique_ptr<AbsPipelineWrapper> CreateStencilClipPipeline(
-      GPUVkContext* ctx) override;
-  std::unique_ptr<AbsPipelineWrapper> CreateStencilKeepPipeline(
-      GPUVkContext* ctx) override;
-  std::unique_ptr<AbsPipelineWrapper> CreateOSStaticPipeline(
-      GPUVkContext* ctx) override;
-  std::unique_ptr<AbsPipelineWrapper> CreateOSStencilPipeline(
-      GPUVkContext* ctx) override;
-};
+			std::unique_ptr<AbsPipelineWrapper> CreateStaticPipeline(
+			    GPUVkContext* ctx) override;
+			std::unique_ptr<AbsPipelineWrapper> CreateStencilDiscardPipeline(
+			    GPUVkContext* ctx) override;
+			std::unique_ptr<AbsPipelineWrapper> CreateStencilClipPipeline(
+			    GPUVkContext* ctx) override;
+			std::unique_ptr<AbsPipelineWrapper> CreateStencilKeepPipeline(
+			    GPUVkContext* ctx) override;
+			std::unique_ptr<AbsPipelineWrapper> CreateOSStaticPipeline(
+			    GPUVkContext* ctx) override;
+			std::unique_ptr<AbsPipelineWrapper> CreateOSStencilPipeline(
+			    GPUVkContext* ctx) override;
+	};
 
 }  // namespace skity
 

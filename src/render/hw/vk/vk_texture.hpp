@@ -9,77 +9,91 @@
 #include "src/render/hw/hw_texture.hpp"
 #include "src/render/hw/vk/vk_interface.hpp"
 
-namespace skity {
+namespace skity
+{
 
-struct AllocatedBuffer;
-struct AllocatedImage;
+	struct AllocatedBuffer;
+	struct AllocatedImage;
 
-class VKMemoryAllocator;
-class VkRenderer;
+	class VKMemoryAllocator;
+	class VkRenderer;
 
-class VKTexture : public HWTexture, public VkInterfaceClient {
- public:
-  VKTexture(VKInterface* interface, VKMemoryAllocator* allocator,
-            VkRenderer* renderer, GPUVkContext* ctx,
-            VkImageUsageFlags flags = VK_IMAGE_USAGE_SAMPLED_BIT |
-                                      VK_IMAGE_USAGE_TRANSFER_DST_BIT);
+	class VKTexture : public HWTexture, public VkInterfaceClient
+	{
+		public:
+			VKTexture(VKInterface* interface, VKMemoryAllocator* allocator,
+			          VkRenderer* renderer, GPUVkContext* ctx,
+			          VkImageUsageFlags flags = VK_IMAGE_USAGE_SAMPLED_BIT |
+			                                    VK_IMAGE_USAGE_TRANSFER_DST_BIT);
 
-  ~VKTexture() override = default;
+			~VKTexture() override = default;
 
-  void Init(HWTexture::Type type, HWTexture::Format format) override;
+			void Init(HWTexture::Type type, HWTexture::Format format) override;
 
-  void Destroy() override;
+			void Destroy() override;
 
-  void Bind() override;
-  void UnBind() override;
+			void Bind() override;
+			void UnBind() override;
 
-  uint32_t GetWidth() override;
-  uint32_t GetHeight() override;
+			uint32_t GetWidth() override;
+			uint32_t GetHeight() override;
 
-  void Resize(uint32_t width, uint32_t height) override;
+			void Resize(uint32_t width, uint32_t height) override;
 
-  void UploadData(uint32_t offset_x, uint32_t offset_y, uint32_t width,
-                  uint32_t height, void* data) override;
+			void UploadData(uint32_t offset_x, uint32_t offset_y, uint32_t width,
+			                uint32_t height, void* data) override;
 
-  virtual void PrepareForDraw();
+			virtual void PrepareForDraw();
 
-  void ChangeImageLayout(VkImageLayout target_layout);
+			void ChangeImageLayout(VkImageLayout target_layout);
 
-  void ChangeImageLayoutWithoutSumbit(VkImageLayout target_layout);
+			void ChangeImageLayoutWithoutSumbit(VkImageLayout target_layout);
 
-  VkSampler GetSampler() const;
+			VkSampler GetSampler() const;
 
-  VkImageView GetImageView() const { return vk_image_view_; }
+			VkImageView GetImageView() const
+			{
+				return vk_image_view_;
+			}
 
-  VkImage GetImage() const;
+			VkImage GetImage() const;
 
-  VkImageLayout GetImageLayout() const;
+			VkImageLayout GetImageLayout() const;
 
-  VkFormat GetFormat() const { return format_; }
+			VkFormat GetFormat() const
+			{
+				return format_;
+			}
 
-  AllocatedImage* GetAllocatedImage() const { return image_.get(); }
+			AllocatedImage* GetAllocatedImage() const
+			{
+				return image_.get();
+			}
 
-  VkImageSubresourceRange const& Range() const { return range_; }
+			VkImageSubresourceRange const& Range() const
+			{
+				return range_;
+			}
 
- private:
-  void CreateBufferAndImage();
+		private:
+			void CreateBufferAndImage();
 
-  uint32_t BytesPerRow() const;
+			uint32_t BytesPerRow() const;
 
- private:
-  VKMemoryAllocator* allocator_ = {};
-  VkRenderer* renderer_ = {};
-  GPUVkContext* ctx_ = {};
-  VkImageUsageFlags flags_ = {};
-  VkFormat format_ = {};
-  VkImageSubresourceRange range_ = {};
-  VkImageView vk_image_view_ = {};
-  uint32_t bpp_ = {};
-  uint32_t width_ = {};
-  uint32_t height_ = {};
-  // allocated vulkan image handler
-  std::unique_ptr<AllocatedImage> image_;
-};
+		private:
+			VKMemoryAllocator* allocator_ = {};
+			VkRenderer* renderer_ = {};
+			GPUVkContext* ctx_ = {};
+			VkImageUsageFlags flags_ = {};
+			VkFormat format_ = {};
+			VkImageSubresourceRange range_ = {};
+			VkImageView vk_image_view_ = {};
+			uint32_t bpp_ = {};
+			uint32_t width_ = {};
+			uint32_t height_ = {};
+			// allocated vulkan image handler
+			std::unique_ptr<AllocatedImage> image_;
+	};
 
 }  // namespace skity
 

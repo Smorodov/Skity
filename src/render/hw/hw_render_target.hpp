@@ -7,101 +7,119 @@
 
 #include "src/render/hw/hw_texture.hpp"
 
-namespace skity {
+namespace skity
+{
 
-// Need to call HWPipelne::BindRenderTarget first,
-// otherwise, all Bindxxx function is not working
-class HWRenderTarget {
- public:
-  HWRenderTarget(uint32_t width, uint32_t height)
-      : width_(width), height_(height) {}
-  virtual ~HWRenderTarget() = default;
+	// Need to call HWPipelne::BindRenderTarget first,
+	// otherwise, all Bindxxx function is not working
+	class HWRenderTarget
+	{
+		public:
+			HWRenderTarget(uint32_t width, uint32_t height)
+				: width_(width), height_(height) {}
+			virtual ~HWRenderTarget() = default;
 
-  uint32_t Width() const { return width_; }
-  uint32_t Height() const { return height_; }
+			uint32_t Width() const
+			{
+				return width_;
+			}
+			uint32_t Height() const
+			{
+				return height_;
+			}
 
-  virtual HWTexture* ColorTexture() = 0;
+			virtual HWTexture* ColorTexture() = 0;
 
-  virtual HWTexture* HorizontalTexture() = 0;
+			virtual HWTexture* HorizontalTexture() = 0;
 
-  virtual HWTexture* VerticalTexture() = 0;
+			virtual HWTexture* VerticalTexture() = 0;
 
-  virtual void BindColorTexture() = 0;
+			virtual void BindColorTexture() = 0;
 
-  virtual void BlitColorTexture() = 0;
+			virtual void BlitColorTexture() = 0;
 
-  virtual void BindHorizontalTexture() = 0;
+			virtual void BindHorizontalTexture() = 0;
 
-  virtual void BindVerticalTexture() = 0;
+			virtual void BindVerticalTexture() = 0;
 
-  virtual void Init() = 0;
+			virtual void Init() = 0;
 
-  virtual void Destroy() = 0;
+			virtual void Destroy() = 0;
 
-  void SetEnableMultiSample(bool enable) { msaa_ = enable; }
+			void SetEnableMultiSample(bool enable)
+			{
+				msaa_ = enable;
+			}
 
-  bool EnableMultiSample() const { return msaa_; }
+			bool EnableMultiSample() const
+			{
+				return msaa_;
+			}
 
- private:
-  uint32_t width_ = 0;
-  uint32_t height_ = 0;
-  bool msaa_ = false;
-};
+		private:
+			uint32_t width_ = 0;
+			uint32_t height_ = 0;
+			bool msaa_ = false;
+	};
 
-class HWRenderTargetCache final {
-  using RefRenderTarget = std::unique_ptr<HWRenderTarget>;
+	class HWRenderTargetCache final
+	{
+			using RefRenderTarget = std::unique_ptr<HWRenderTarget>;
 
- public:
-  struct Size {
-    uint32_t width = {};
-    uint32_t height = {};
+		public:
+			struct Size
+			{
+				uint32_t width = {};
+				uint32_t height = {};
 
-    Size() = default;
+				Size() = default;
 
-    bool operator==(Size const& other) const {
-      return width == other.width && height == other.height;
-    }
-  };
+				bool operator==(Size const& other) const
+				{
+					return width == other.width && height == other.height;
+				}
+			};
 
-  struct SizeHash {
-    std::size_t operator()(Size const& size) const {
-      size_t res = 17;
+			struct SizeHash
+			{
+				std::size_t operator()(Size const& size) const
+				{
+					size_t res = 17;
+					res = res * 31 + std::hash<uint32_t>()(size.width);
+					res = res * 31 + std::hash<uint32_t>()(size.height);
+					return res;
+				}
+			};
 
-      res = res * 31 + std::hash<uint32_t>()(size.width);
-      res = res * 31 + std::hash<uint32_t>()(size.height);
+			struct Info
+			{
+				size_t age = {};
+				bool used = false;
+				HWRenderTarget* target = {};
+			};
 
-      return res;
-    }
-  };
+			HWRenderTargetCache() = default;
+			~HWRenderTargetCache() = default;
 
-  struct Info {
-    size_t age = {};
-    bool used = false;
-    HWRenderTarget* target = {};
-  };
+			HWRenderTarget* QueryTarget(uint32_t width, uint32_t height);
 
-  HWRenderTargetCache() = default;
-  ~HWRenderTargetCache() = default;
+			HWRenderTarget* StoreCache(std::unique_ptr<HWRenderTarget> target);
 
-  HWRenderTarget* QueryTarget(uint32_t width, uint32_t height);
+			void BeginFrame();
 
-  HWRenderTarget* StoreCache(std::unique_ptr<HWRenderTarget> target);
+			void EndFrame();
 
-  void BeginFrame();
+			void CleanUp();
 
-  void EndFrame();
+		private:
+			void ClearUsedFlags();
 
-  void CleanUp();
-
- private:
-  void ClearUsedFlags();
-
- private:
-  std::unordered_map<HWRenderTarget*, RefRenderTarget> target_cache_ = {};
-  std::unordered_map<Size, std::vector<Info>, HWRenderTargetCache::SizeHash>
-      info_map_ = {};
-  size_t current_age_ = {};
-};
+		private:
+			std::unordered_map<HWRenderTarget*, RefRenderTarget> target_cache_ = {};
+			std::unordered_map<Size, std::vector<Info>, HWRenderTargetCache::SizeHash>
+			info_map_ = {};
+			size_t current_age_ = {};
+	};
 
 }  // namespace skity
 

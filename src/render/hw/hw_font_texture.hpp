@@ -3,20 +3,22 @@
 
 #include "src/render/text/font_texture.hpp"
 
-namespace skity {
+namespace skity
+{
 
-class HWTexture;
+	class HWTexture;
 
-class HWFontTexture : public FontTexture {
- public:
-  HWFontTexture(Typeface* typeface) : FontTexture(typeface) {}
-  ~HWFontTexture() override = default;
+	class HWFontTexture : public FontTexture
+	{
+		public:
+			HWFontTexture(Typeface* typeface) : FontTexture(typeface) {}
+			~HWFontTexture() override = default;
 
-  virtual void Init() = 0;
-  virtual void Destroy() = 0;
+			virtual void Init() = 0;
+			virtual void Destroy() = 0;
 
-  virtual HWTexture* GetHWTexture() = 0;
-};
+			virtual HWTexture* GetHWTexture() = 0;
+	};
 
 }  // namespace skity
 

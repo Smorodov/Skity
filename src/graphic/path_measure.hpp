@@ -5,50 +5,52 @@
 
 #include "src/geometry/contour_measure.hpp"
 
-namespace skity {
+namespace skity
+{
 
-/**
- * @class PathMeasure
- *	Util class to measure path length
- */
-class PathMeasure final {
- public:
-  PathMeasure();
-  PathMeasure(Path const& path, bool forceClosed, float resScale = 1.f);
+	/**
+	 * @class PathMeasure
+	 *	Util class to measure path length
+	 */
+	class PathMeasure final
+	{
+		public:
+			PathMeasure();
+			PathMeasure(Path const& path, bool forceClosed, float resScale = 1.f);
 
-  ~PathMeasure();
+			~PathMeasure();
 
-  void setPath(Path const* path, bool forceClosed);
+			void setPath(Path const* path, bool forceClosed);
 
-  /**
-   * Return the total length of the current contour, or 0 if no path is
-   * associated.
-   *
-   * @return total length of current contour
-   */
-  float getLength();
+			/**
+			 * Return the total length of the current contour, or 0 if no path is
+			 * associated.
+			 *
+			 * @return total length of current contour
+			 */
+			float getLength();
 
-  /**
-   * @brief Get the Pos Tan object
-   *
-   * @param distance
-   * @param position
-   * @param tangent
-   * @return true
-   * @return false
-   */
-  bool getPosTan(float distance, Point* position, Vector* tangent);
+			/**
+			 * @brief Get the Pos Tan object
+			 *
+			 * @param distance
+			 * @param position
+			 * @param tangent
+			 * @return true
+			 * @return false
+			 */
+			bool getPosTan(float distance, Point* position, Vector* tangent);
 
-  bool getSegment(float startD, float stopD, Path* dst, bool startWithMoveTo);
+			bool getSegment(float startD, float stopD, Path* dst, bool startWithMoveTo);
 
-  bool isClosed();
+			bool isClosed();
 
-  bool nextContour();
+			bool nextContour();
 
- private:
-  ContourMeasureIter iter_;
-  std::shared_ptr<ContourMeasure> contour_;
-};
+		private:
+			ContourMeasureIter iter_;
+			std::shared_ptr<ContourMeasure> contour_;
+	};
 
 }  // namespace skity
 

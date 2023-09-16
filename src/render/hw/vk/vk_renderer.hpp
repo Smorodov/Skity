@@ -10,186 +10,207 @@
 #include "src/render/hw/vk/vk_memory.hpp"
 #include "src/render/hw/vk/vk_pipeline_wrapper.hpp"
 
-namespace skity {
+namespace skity
+{
 
-class VKTexture;
-class VKRenderTarget;
-struct VKInterface;
+	class VKTexture;
+	class VKRenderTarget;
+	struct VKInterface;
 
-template <class T>
-struct DirtyValueHolder {
-  T value = {};
-  bool dirty = true;
-};
+	template <class T>
+	struct DirtyValueHolder
+	{
+		T value = {};
+		bool dirty = true;
+	};
 
-class VkRenderer : public HWRenderer {
- public:
-  VkRenderer(GPUVkContext* ctx, bool use_gs);
-  ~VkRenderer() override;
+	class VkRenderer : public HWRenderer
+	{
+		public:
+			VkRenderer(GPUVkContext* ctx, bool use_gs);
+			~VkRenderer() override;
 
-  void Init() override;
+			void Init() override;
 
-  void Destroy() override;
+			void Destroy() override;
 
-  void Bind() override;
+			void Bind() override;
 
-  void UnBind() override;
+			void UnBind() override;
 
-  void SetViewProjectionMatrix(glm::mat4 const& mvp) override;
+			void SetViewProjectionMatrix(glm::mat4 const& mvp) override;
 
-  void SetModelMatrix(glm::mat4 const& matrix) override;
+			void SetModelMatrix(glm::mat4 const& matrix) override;
 
-  void SetPipelineColorMode(HWPipelineColorMode mode) override;
+			void SetPipelineColorMode(HWPipelineColorMode mode) override;
 
-  void SetStrokeWidth(float width) override;
+			void SetStrokeWidth(float width) override;
 
-  void SetUniformColor(glm::vec4 const& color) override;
+			void SetUniformColor(glm::vec4 const& color) override;
 
-  void SetGradientBoundInfo(glm::vec4 const& info) override;
+			void SetGradientBoundInfo(glm::vec4 const& info) override;
 
-  void SetGradientCountInfo(int32_t color_count, int32_t pos_count) override;
+			void SetGradientCountInfo(int32_t color_count, int32_t pos_count) override;
 
-  void SetGradientColors(std::vector<Color4f> const& colors) override;
+			void SetGradientColors(std::vector<Color4f> const& colors) override;
 
-  void SetGradientPositions(std::vector<float> const& pos) override;
+			void SetGradientPositions(std::vector<float> const& pos) override;
 
-  void UploadVertexBuffer(void* data, size_t data_size) override;
+			void UploadVertexBuffer(void* data, size_t data_size) override;
 
-  void UploadIndexBuffer(void* data, size_t data_size) override;
+			void UploadIndexBuffer(void* data, size_t data_size) override;
 
-  void SetGlobalAlpha(float alpha) override;
+			void SetGlobalAlpha(float alpha) override;
 
-  void EnableStencilTest() override;
+			void EnableStencilTest() override;
 
-  void DisableStencilTest() override;
+			void DisableStencilTest() override;
 
-  void EnableColorOutput() override;
+			void EnableColorOutput() override;
 
-  void DisableColorOutput() override;
+			void DisableColorOutput() override;
 
-  void UpdateStencilMask(uint8_t write_mask) override;
+			void UpdateStencilMask(uint8_t write_mask) override;
 
-  void UpdateStencilOp(HWStencilOp op) override;
+			void UpdateStencilOp(HWStencilOp op) override;
 
-  void UpdateStencilFunc(HWStencilFunc func, uint32_t value,
-                         uint32_t compare_mask) override;
+			void UpdateStencilFunc(HWStencilFunc func, uint32_t value,
+			                       uint32_t compare_mask) override;
 
-  void DrawIndex(uint32_t start, uint32_t count) override;
+			void DrawIndex(uint32_t start, uint32_t count) override;
 
-  void BindTexture(HWTexture* texture, uint32_t slot) override;
+			void BindTexture(HWTexture* texture, uint32_t slot) override;
 
-  void BindRenderTarget(HWRenderTarget* render_target) override;
+			void BindRenderTarget(HWRenderTarget* render_target) override;
 
-  void UnBindRenderTarget(HWRenderTarget* render_target) override;
+			void UnBindRenderTarget(HWRenderTarget* render_target) override;
 
-  // internal vulkan helper functions
-  VKMemoryAllocator* Allocator() const { return vk_memory_allocator_.get(); }
+			// internal vulkan helper functions
+			VKMemoryAllocator* Allocator() const
+			{
+				return vk_memory_allocator_.get();
+			}
 
-  VkCommandBuffer ObtainInternalCMD();
+			VkCommandBuffer ObtainInternalCMD();
 
-  void SubmitCMD(VkCommandBuffer cmd);
+			void SubmitCMD(VkCommandBuffer cmd);
 
-  void WaitForFence();
+			void WaitForFence();
 
-  void ResetFence();
+			void ResetFence();
 
-  VkFence PipelineFence() const { return vk_fence_; }
-  VkSampler PipelineSampler() const { return vk_sampler_; }
+			VkFence PipelineFence() const
+			{
+				return vk_fence_;
+			}
+			VkSampler PipelineSampler() const
+			{
+				return vk_sampler_;
+			}
 
-  VkRenderPass OffScreenRenderPass() const { return os_render_pass_; }
-  VkFormat OffScreenColorFormat() const { return os_color_format_; }
+			VkRenderPass OffScreenRenderPass() const
+			{
+				return os_render_pass_;
+			}
+			VkFormat OffScreenColorFormat() const
+			{
+				return os_color_format_;
+			}
 
-  VKInterface* GetInterface() const { return vk_interface_; }
+			VKInterface* GetInterface() const
+			{
+				return vk_interface_;
+			}
 
- private:
-  void InitCMDPool();
-  void InitFence();
-  void InitSampler();
-  void InitFrameBuffers();
-  void InitPipelines();
-  void InitVertexBuffer(size_t new_size);
-  void InitIndexBuffer(size_t new_size);
-  void InitOffScreenRenderPass();
+		private:
+			void InitCMDPool();
+			void InitFence();
+			void InitSampler();
+			void InitFrameBuffers();
+			void InitPipelines();
+			void InitVertexBuffer(size_t new_size);
+			void InitIndexBuffer(size_t new_size);
+			void InitOffScreenRenderPass();
 
-  void DestroyCMDPool();
-  void DestroyFence();
-  void DestroySampler();
-  void DestroyPipelines();
-  void DestroyFrameBuffers();
+			void DestroyCMDPool();
+			void DestroyFence();
+			void DestroySampler();
+			void DestroyPipelines();
+			void DestroyFrameBuffers();
 
-  VkCommandBuffer GetCurrentCMD();
+			VkCommandBuffer GetCurrentCMD();
 
-  AbsPipelineWrapper* PickColorPipeline();
-  AbsPipelineWrapper* PickStencilPipeline();
-  AbsPipelineWrapper* PickGradientPipeline();
-  AbsPipelineWrapper* PickImagePipeline();
-  AbsPipelineWrapper* PickBlurPipeline();
+			AbsPipelineWrapper* PickColorPipeline();
+			AbsPipelineWrapper* PickStencilPipeline();
+			AbsPipelineWrapper* PickGradientPipeline();
+			AbsPipelineWrapper* PickImagePipeline();
+			AbsPipelineWrapper* PickBlurPipeline();
 
-  void BindPipelineIfNeed(AbsPipelineWrapper* pipeline);
+			void BindPipelineIfNeed(AbsPipelineWrapper* pipeline);
 
-  void UpdatePushConstantIfNeed(AbsPipelineWrapper* pipeline);
-  void UpdateTransformMatrixIfNeed(AbsPipelineWrapper* pipeline);
-  void UpdateCommonSetIfNeed(AbsPipelineWrapper* pipeline);
-  void UpdateStencilConfigIfNeed(AbsPipelineWrapper* pipeline);
-  void UpdateColorInfoIfNeed(AbsPipelineWrapper* pipeline);
-  void UpdateFontInfoIfNeed(AbsPipelineWrapper* pipeline);
+			void UpdatePushConstantIfNeed(AbsPipelineWrapper* pipeline);
+			void UpdateTransformMatrixIfNeed(AbsPipelineWrapper* pipeline);
+			void UpdateCommonSetIfNeed(AbsPipelineWrapper* pipeline);
+			void UpdateStencilConfigIfNeed(AbsPipelineWrapper* pipeline);
+			void UpdateColorInfoIfNeed(AbsPipelineWrapper* pipeline);
+			void UpdateFontInfoIfNeed(AbsPipelineWrapper* pipeline);
 
-  void ResetUniformDirty();
+			void ResetUniformDirty();
 
-  SKVkFrameBufferData* CurrentFrameBuffer();
+			SKVkFrameBufferData* CurrentFrameBuffer();
 
- private:
-  GPUVkContext* ctx_ = {};
-  bool use_gs_ = {};
-  VkCommandPool vk_cmd_pool_ = {};
-  VkFence vk_fence_ = {};
-  VkSampler vk_sampler_ = {};
-  HWPipelineColorMode color_mode_ = HWPipelineColorMode::kUniformColor;
-  HWStencilFunc stencil_func_ = HWStencilFunc::ALWAYS;
-  HWStencilOp stencil_op_ = HWStencilOp::KEEP;
-  bool enable_stencil_test_ = false;
-  bool enable_color_output_ = true;
-  uint8_t stencil_write_mask_ = 0xFF;
-  uint8_t stencil_compare_mask_ = 0xFF;
-  uint8_t stencil_value_ = 0;
-  std::unique_ptr<VKMemoryAllocator> vk_memory_allocator_ = {};
-  std::vector<std::unique_ptr<SKVkFrameBufferData>> frame_buffer_ = {};
-  // used to check if need to bind pipeline
-  AbsPipelineWrapper* prev_pipeline_ = nullptr;
+		private:
+			GPUVkContext* ctx_ = {};
+			bool use_gs_ = {};
+			VkCommandPool vk_cmd_pool_ = {};
+			VkFence vk_fence_ = {};
+			VkSampler vk_sampler_ = {};
+			HWPipelineColorMode color_mode_ = HWPipelineColorMode::kUniformColor;
+			HWStencilFunc stencil_func_ = HWStencilFunc::ALWAYS;
+			HWStencilOp stencil_op_ = HWStencilOp::KEEP;
+			bool enable_stencil_test_ = false;
+			bool enable_color_output_ = true;
+			uint8_t stencil_write_mask_ = 0xFF;
+			uint8_t stencil_compare_mask_ = 0xFF;
+			uint8_t stencil_value_ = 0;
+			std::unique_ptr<VKMemoryAllocator> vk_memory_allocator_ = {};
+			std::vector<std::unique_ptr<SKVkFrameBufferData>> frame_buffer_ = {};
+			// used to check if need to bind pipeline
+			AbsPipelineWrapper* prev_pipeline_ = nullptr;
 
-  // color pipelines
-  std::unique_ptr<PipelineFamily> color_pipeline_family_ = {};
-  // gradient pipelines
-  std::unique_ptr<PipelineFamily> gradient_pipeline_family_ = {};
-  // image pipelines
-  std::unique_ptr<PipelineFamily> image_pipeline_family_ = {};
-  // stencil pipelines
-  std::unique_ptr<PipelineFamily> stencil_pipeline_family_ = {};
-  // blur pipelines
-  std::unique_ptr<AbsPipelineWrapper> static_blur_pipeline_ = {};
-  std::unique_ptr<AbsPipelineWrapper> os_static_blur_pipeline_ = {};
-  std::unique_ptr<AbsPipelineWrapper> compute_blur_pipeline_ = {};
+			// color pipelines
+			std::unique_ptr<PipelineFamily> color_pipeline_family_ = {};
+			// gradient pipelines
+			std::unique_ptr<PipelineFamily> gradient_pipeline_family_ = {};
+			// image pipelines
+			std::unique_ptr<PipelineFamily> image_pipeline_family_ = {};
+			// stencil pipelines
+			std::unique_ptr<PipelineFamily> stencil_pipeline_family_ = {};
+			// blur pipelines
+			std::unique_ptr<AbsPipelineWrapper> static_blur_pipeline_ = {};
+			std::unique_ptr<AbsPipelineWrapper> os_static_blur_pipeline_ = {};
+			std::unique_ptr<AbsPipelineWrapper> compute_blur_pipeline_ = {};
 
-  // render pass for all offscreen pipeline
-  VkRenderPass os_render_pass_ = {};
-  VkFormat os_color_format_ = VK_FORMAT_R8G8B8A8_UNORM;
+			// render pass for all offscreen pipeline
+			VkRenderPass os_render_pass_ = {};
+			VkFormat os_color_format_ = VK_FORMAT_R8G8B8A8_UNORM;
 
-  std::unique_ptr<AllocatedBuffer> vertex_buffer_ = {};
-  std::unique_ptr<AllocatedBuffer> index_buffer_ = {};
-  DirtyValueHolder<GlobalPushConst> global_push_const_ = {};
-  DirtyValueHolder<glm::mat4> model_matrix_ = {};
-  DirtyValueHolder<CommonFragmentSet> common_fragment_set_ = {};
-  DirtyValueHolder<ColorInfoSet> color_info_set_ = {};
-  DirtyValueHolder<GradientInfo> gradient_info_set_ = {};
+			std::unique_ptr<AllocatedBuffer> vertex_buffer_ = {};
+			std::unique_ptr<AllocatedBuffer> index_buffer_ = {};
+			DirtyValueHolder<GlobalPushConst> global_push_const_ = {};
+			DirtyValueHolder<glm::mat4> model_matrix_ = {};
+			DirtyValueHolder<CommonFragmentSet> common_fragment_set_ = {};
+			DirtyValueHolder<ColorInfoSet> color_info_set_ = {};
+			DirtyValueHolder<GradientInfo> gradient_info_set_ = {};
 
-  VKTexture* image_texture_ = nullptr;
-  VKTexture* font_texture_ = nullptr;
-  VKRenderTarget* current_target_ = nullptr;
-  VkDescriptorSet empty_font_set_ = VK_NULL_HANDLE;
-  std::unique_ptr<VKFontTexture> empty_font_texture_ = {};
-  std::map<VKTexture*, VkDescriptorSet> used_font_and_set_ = {};
-  VKInterface* vk_interface_ = {};
-};
+			VKTexture* image_texture_ = nullptr;
+			VKTexture* font_texture_ = nullptr;
+			VKRenderTarget* current_target_ = nullptr;
+			VkDescriptorSet empty_font_set_ = VK_NULL_HANDLE;
+			std::unique_ptr<VKFontTexture> empty_font_texture_ = {};
+			std::map<VKTexture*, VkDescriptorSet> used_font_and_set_ = {};
+			VKInterface* vk_interface_ = {};
+	};
 
 }  // namespace skity
 

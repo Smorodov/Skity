@@ -7,60 +7,63 @@
 
 #include "src/render/hw/hw_draw.hpp"
 
-namespace skity {
+namespace skity
+{
 
-class HWCanvasState {
- public:
-  struct ClipStackValue {
-    uint32_t stack_depth = {};
-    HWDrawRange front_range = {};
-    HWDrawRange back_range = {};
-    HWDrawRange bound_range = {};
-    Matrix stack_matrix = {};
-  };
+	class HWCanvasState
+	{
+		public:
+			struct ClipStackValue
+			{
+				uint32_t stack_depth = {};
+				HWDrawRange front_range = {};
+				HWDrawRange back_range = {};
+				HWDrawRange bound_range = {};
+				Matrix stack_matrix = {};
+			};
 
-  HWCanvasState();
-  ~HWCanvasState() = default;
+			HWCanvasState();
+			~HWCanvasState() = default;
 
-  void Save();
-  void Restore();
-  void RestoreToCount(int save_count);
-  void Translate(float dx, float dy);
-  void Scale(float dx, float dy);
-  void Rotate(float degree);
-  void Rotate(float degree, float px, float py);
-  void Concat(Matrix const& matrix);
+			void Save();
+			void Restore();
+			void RestoreToCount(int save_count);
+			void Translate(float dx, float dy);
+			void Scale(float dx, float dy);
+			void Rotate(float degree);
+			void Rotate(float degree, float px, float py);
+			void Concat(Matrix const& matrix);
 
-  void SaveClipPath(HWDrawRange const& front_range,
-                    HWDrawRange const& back_range,
-                    HWDrawRange const& bound_range, Matrix const& matrix);
+			void SaveClipPath(HWDrawRange const& front_range,
+			                  HWDrawRange const& back_range,
+			                  HWDrawRange const& bound_range, Matrix const& matrix);
 
-  bool ClipStackEmpty();
+			bool ClipStackEmpty();
 
-  bool NeedRevertClipStencil();
+			bool NeedRevertClipStencil();
 
-  ClipStackValue CurrentClipStackValue();
+			ClipStackValue CurrentClipStackValue();
 
-  void ForEachClipStackValue(
-      std::function<void(ClipStackValue const&, size_t)> const& func);
+			void ForEachClipStackValue(
+			    std::function<void(ClipStackValue const&, size_t)> const& func);
 
-  Matrix CurrentMatrix();
+			Matrix CurrentMatrix();
 
-  bool HasClip();
+			bool HasClip();
 
-  bool MatrixDirty();
-  void ClearMatrixDirty();
+			bool MatrixDirty();
+			void ClearMatrixDirty();
 
- private:
-  void PushMatrixStack();
-  void PopMatrixStack();
-  void PopClipStack();
+		private:
+			void PushMatrixStack();
+			void PopMatrixStack();
+			void PopClipStack();
 
- private:
-  std::vector<Matrix> matrix_state_ = {};
-  std::vector<ClipStackValue> clip_stack_ = {};
-  bool matrix_dirty_ = true;
-};
+		private:
+			std::vector<Matrix> matrix_state_ = {};
+			std::vector<ClipStackValue> clip_stack_ = {};
+			bool matrix_dirty_ = true;
+	};
 
 }  // namespace skity
 

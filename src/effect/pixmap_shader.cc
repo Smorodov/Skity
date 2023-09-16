@@ -2,11 +2,15 @@
 
 #include <skity/io/pixmap.hpp>
 
-namespace skity {
+namespace skity
+{
 
-PixmapShader::PixmapShader(std::shared_ptr<Pixmap> pixmap)
-    : Shader(), pixmap_(std::move(pixmap)) {}
+	PixmapShader::PixmapShader(std::shared_ptr<Pixmap> pixmap)
+		: Shader(), pixmap_(std::move(pixmap)) {}
 
-std::shared_ptr<Pixmap> PixmapShader::asImage() const { return pixmap_; }
+	std::shared_ptr<Pixmap> PixmapShader::asImage() const
+	{
+		return pixmap_;
+	}
 
 }  // namespace skity

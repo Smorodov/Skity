@@ -4,27 +4,29 @@
 #include "src/render/hw/hw_font_texture.hpp"
 #include "src/render/hw/vk/vk_texture.hpp"
 
-namespace skity {
+namespace skity
+{
 
-class VKFontTexture : public HWFontTexture, public VKTexture {
- public:
-  VKFontTexture(VKInterface* interface, Typeface* typeface,
-                VKMemoryAllocator* allocator, VkRenderer* renderer,
-                GPUVkContext* ctx);
-  ~VKFontTexture() override;
+	class VKFontTexture : public HWFontTexture, public VKTexture
+	{
+		public:
+			VKFontTexture(VKInterface* interface, Typeface* typeface,
+			              VKMemoryAllocator* allocator, VkRenderer* renderer,
+			              GPUVkContext* ctx);
+			~VKFontTexture() override;
 
-  void Init() override;
+			void Init() override;
 
-  void Destroy() override;
+			void Destroy() override;
 
-  HWTexture* GetHWTexture() override;
+			HWTexture* GetHWTexture() override;
 
- protected:
-  void OnUploadRegion(uint32_t x, uint32_t y, uint32_t width, uint32_t height,
-                      uint8_t* data) override;
+		protected:
+			void OnUploadRegion(uint32_t x, uint32_t y, uint32_t width, uint32_t height,
+			                    uint8_t* data) override;
 
-  void OnResize(uint32_t new_width, uint32_t new_height) override;
-};
+			void OnResize(uint32_t new_width, uint32_t new_height) override;
+	};
 
 }  // namespace skity
 

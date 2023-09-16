@@ -5,56 +5,66 @@
 #include <cstdint>
 #include <vector>
 
-namespace skity {
+namespace skity
+{
 
-class HWRenderer;
+	class HWRenderer;
 
-enum {
-  HW_VERTEX_TYPE_LINE_NORMAL = 1,
-  // circle fill, and u,v store circle center
-  HW_VERTEX_TYPE_CIRCLE = 2,
-  // quad fill, this used for path fill with quad, or maybe path stroke
-  HW_VERTEX_TYPE_QUAD_IN = 3,
-  HW_VERTEX_TYPE_QUAD_OUT = 4,
-  // text fill,
-  HW_VERTEX_TYPE_TEXT = 5,
-  // stroke quad
-  HW_VERTEX_TYPE_QUAD_STROKE = 6,
-};
+	enum
+	{
+	    HW_VERTEX_TYPE_LINE_NORMAL = 1,
+	    // circle fill, and u,v store circle center
+	    HW_VERTEX_TYPE_CIRCLE = 2,
+	    // quad fill, this used for path fill with quad, or maybe path stroke
+	    HW_VERTEX_TYPE_QUAD_IN = 3,
+	    HW_VERTEX_TYPE_QUAD_OUT = 4,
+	    // text fill,
+	    HW_VERTEX_TYPE_TEXT = 5,
+	    // stroke quad
+	    HW_VERTEX_TYPE_QUAD_STROKE = 6,
+	};
 
-struct HWVertex {
-  float x = 0.f;
-  float y = 0.f;
-  float mix = 0.f;
-  float u = 0.f;
-  float v = 0.f;
+	struct HWVertex
+	{
+		float x = 0.f;
+		float y = 0.f;
+		float mix = 0.f;
+		float u = 0.f;
+		float v = 0.f;
 
-  HWVertex(float v1, float v2, float v3, float v4, float v5)
-      : x(v1), y(v2), mix(v3), u(v4), v(v5) {}
-};
+		HWVertex(float v1, float v2, float v3, float v4, float v5)
+			: x(v1), y(v2), mix(v3), u(v4), v(v5) {}
+	};
 
-class HWMesh {
- public:
-  HWMesh() = default;
-  ~HWMesh() = default;
+	class HWMesh
+	{
+		public:
+			HWMesh() = default;
+			~HWMesh() = default;
 
-  size_t AppendVertex(float x, float y, float mix, float u = 0.f,
-                      float v = 0.f);
-  size_t AppendVertex(HWVertex const& vertex);
+			size_t AppendVertex(float x, float y, float mix, float u = 0.f,
+			                    float v = 0.f);
+			size_t AppendVertex(HWVertex const& vertex);
 
-  size_t VertexBase() { return raw_vertex_buffer_.size(); }
+			size_t VertexBase()
+			{
+				return raw_vertex_buffer_.size();
+			}
 
-  size_t IndexBase() { return raw_index_buffer_.size(); }
+			size_t IndexBase()
+			{
+				return raw_index_buffer_.size();
+			}
 
-  size_t AppendIndices(std::vector<uint32_t> const& indices);
+			size_t AppendIndices(std::vector<uint32_t> const& indices);
 
-  void UploadMesh(HWRenderer* renderer);
-  void ResetMesh();
+			void UploadMesh(HWRenderer* renderer);
+			void ResetMesh();
 
- private:
-  std::vector<HWVertex> raw_vertex_buffer_;
-  std::vector<uint32_t> raw_index_buffer_;
-};
+		private:
+			std::vector<HWVertex> raw_vertex_buffer_;
+			std::vector<uint32_t> raw_index_buffer_;
+	};
 
 }  // namespace skity
 

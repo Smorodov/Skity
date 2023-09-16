@@ -3,44 +3,48 @@
 
 #include <cstdint>
 
-namespace skity {
+namespace skity
+{
 
-/**
- * @class Hardware texture interface
- *
- */
-class HWTexture {
- public:
-  enum class Format {
-    kR,
-    kRGB,
-    kRGBA,
-    kS,
-  };
+	/**
+	 * @class Hardware texture interface
+	 *
+	 */
+	class HWTexture
+	{
+		public:
+			enum class Format
+			{
+			    kR,
+			    kRGB,
+			    kRGBA,
+			    kS,
+			};
 
-  enum class Type {
-    kColorTexture,
-    kDepthTexture,
-    kStencilTexture,
-  };
+			enum class Type
+			{
+			    kColorTexture,
+			    kDepthTexture,
+			    kStencilTexture,
+			};
 
-  virtual ~HWTexture() = default;
+			virtual ~HWTexture() = default;
 
-  virtual void Init(HWTexture::Type type, HWTexture::Format format) = 0;
+			virtual void Init(HWTexture::Type type, HWTexture::Format format) = 0;
 
-  virtual void Destroy() = 0;
+			virtual void Destroy() = 0;
 
-  virtual void Bind() = 0;
-  virtual void UnBind() = 0;
+			virtual void Bind() = 0;
+			virtual void UnBind() = 0;
 
-  virtual uint32_t GetWidth() = 0;
-  virtual uint32_t GetHeight() = 0;
+			virtual uint32_t GetWidth() = 0;
+			virtual uint32_t GetHeight() = 0;
 
-  virtual void Resize(uint32_t width, uint32_t height) = 0;
+			virtual void Resize(uint32_t width, uint32_t height) = 0;
 
-  virtual void UploadData(uint32_t offset_x, uint32_t offset_y, uint32_t width,
-                          uint32_t height, void* data) = 0;
-};
+			virtual void UploadData(uint32_t offset_x, uint32_t offset_y, uint32_t width,
+			                        uint32_t height, void* data) = 0;
+	};
 
 }  // namespace skity
 
