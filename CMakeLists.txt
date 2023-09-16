@@ -48,15 +48,7 @@ target_include_directories(
 
 add_library(skity::skity ALIAS skity)
 
-
-add_subdirectory(sandbox)
-set_target_properties( sandbox PROPERTIES  VS_DEBUGGER_WORKING_DIRECTORY "$<TARGET_FILE_DIR:sandbox>")
-set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT sandbox)
-file(COPY ${PROJECT_SOURCE_DIR}/sandbox/Resources DESTINATION ${CMAKE_SOURCE_DIR}/build/Debug)
-file(COPY ${PROJECT_SOURCE_DIR}/sandbox/Resources DESTINATION ${CMAKE_SOURCE_DIR}/build/Release)
-
-
-if(WIN32)
+if(NOT WIN32)
 # default config
 include(GNUInstallDirs)
 endif()
@@ -120,9 +112,9 @@ get_target_property(SKITY_SRC skity SOURCES)
 
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${SKITY_SRC})
 
-#if (${BUILD_TEST} OR ${BUILD_EXAMPLE})
+if (${BUILD_TEST} OR ${BUILD_EXAMPLE})
   add_subdirectory(third_party/glfw)
-#endif()
+endif()
 
 if(${BUILD_TEST} AND CMAKE_BUILD_TYPE STREQUAL "Debug")
   add_subdirectory(third_party/gtest)
@@ -131,6 +123,12 @@ endif()
 
 if(${BUILD_EXAMPLE})
   add_subdirectory(example)
+add_subdirectory(sandbox)
+set_target_properties( sandbox PROPERTIES  VS_DEBUGGER_WORKING_DIRECTORY "$<TARGET_FILE_DIR:sandbox>")
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT sandbox)
+file(COPY ${PROJECT_SOURCE_DIR}/sandbox/Resources DESTINATION ${CMAKE_SOURCE_DIR}/build/Debug)
+file(COPY ${PROJECT_SOURCE_DIR}/sandbox/Resources DESTINATION ${CMAKE_SOURCE_DIR}/build/Release)
+
 endif()
 
 

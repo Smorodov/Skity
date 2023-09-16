@@ -204,6 +204,9 @@
     "objFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj",
     "variantName": "debug",
     "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
       "X86_64"
     ],
     "prefabDirectory": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\prefab",

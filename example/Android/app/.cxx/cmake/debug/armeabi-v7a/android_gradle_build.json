@@ -36,26 +36,6 @@
   ],
   "buildTargetsCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe  -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
-    "ExperimentalSubmit-Debug-armeabi-v7a": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ExperimentalSubmit",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "armeabi-v7a",
-      "artifactName": "ExperimentalSubmit",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalSubmit",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalSubmit.rule",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": []
-    },
     "ContinuousBuild-Debug-armeabi-v7a": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ContinuousBuild",
       "buildType": "debug",
@@ -70,6 +50,26 @@
         },
         {
           "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousBuild.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ExperimentalSubmit-Debug-armeabi-v7a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ExperimentalSubmit",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "armeabi-v7a",
+      "artifactName": "ExperimentalSubmit",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalSubmit",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalSubmit.rule",
           "flagsOrdinal": 5,
           "workingDirectoryOrdinal": 0
         }
@@ -116,22 +116,6 @@
       ],
       "headers": []
     },
-    "pugixml-static-Debug-armeabi-v7a": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" pugixml-static",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "armeabi-v7a",
-      "artifactName": "pugixml-static",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\src\\pugixml.cpp",
-          "flagsOrdinal": 4,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": [],
-      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\libpugixml.a"
-    },
     "ContinuousUpdate-Debug-armeabi-v7a": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ContinuousUpdate",
       "buildType": "debug",
@@ -151,6 +135,22 @@
         }
       ],
       "headers": []
+    },
+    "pugixml-static-Debug-armeabi-v7a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" pugixml-static",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "armeabi-v7a",
+      "artifactName": "pugixml-static",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\src\\pugixml.cpp",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\libpugixml.a"
     },
     "freetype-Debug-armeabi-v7a": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" freetype",
@@ -758,26 +758,6 @@
       ],
       "headers": []
     },
-    "ExperimentalMemCheck-Debug-armeabi-v7a": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ExperimentalMemCheck",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "armeabi-v7a",
-      "artifactName": "ExperimentalMemCheck",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalMemCheck",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalMemCheck.rule",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": []
-    },
     "NightlyStart-Debug-armeabi-v7a": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" NightlyStart",
       "buildType": "debug",
@@ -792,6 +772,26 @@
         },
         {
           "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyStart.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ExperimentalMemCheck-Debug-armeabi-v7a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ExperimentalMemCheck",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "armeabi-v7a",
+      "artifactName": "ExperimentalMemCheck",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalMemCheck",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalMemCheck.rule",
           "flagsOrdinal": 5,
           "workingDirectoryOrdinal": 0
         }
@@ -1586,26 +1586,6 @@
       ],
       "headers": []
     },
-    "ContinuousCoverage-Debug-armeabi-v7a": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ContinuousCoverage",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "armeabi-v7a",
-      "artifactName": "ContinuousCoverage",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousCoverage",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousCoverage.rule",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": []
-    },
     "ExperimentalConfigure-Debug-armeabi-v7a": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ExperimentalConfigure",
       "buildType": "debug",
@@ -1620,6 +1600,26 @@
         },
         {
           "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalConfigure.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ContinuousCoverage-Debug-armeabi-v7a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ContinuousCoverage",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "armeabi-v7a",
+      "artifactName": "ContinuousCoverage",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousCoverage",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousCoverage.rule",
           "flagsOrdinal": 5,
           "workingDirectoryOrdinal": 0
         }

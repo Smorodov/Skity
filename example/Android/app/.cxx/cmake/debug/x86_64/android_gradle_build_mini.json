@@ -166,15 +166,15 @@
       "abi": "x86_64",
       "runtimeFiles": []
     },
-    "NightlyMemCheck-Debug-x86_64": {
-      "artifactName": "NightlyMemCheck",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86_64\" NightlyMemCheck",
-      "abi": "x86_64",
-      "runtimeFiles": []
-    },
     "ExperimentalBuild-Debug-x86_64": {
       "artifactName": "ExperimentalBuild",
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86_64\" ExperimentalBuild",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "NightlyMemCheck-Debug-x86_64": {
+      "artifactName": "NightlyMemCheck",
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86_64\" NightlyMemCheck",
       "abi": "x86_64",
       "runtimeFiles": []
     },

@@ -1426,26 +1426,6 @@
       ],
       "headers": []
     },
-    "NightlyMemCheck-Debug-x86_64": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86_64\" NightlyMemCheck",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "x86_64",
-      "artifactName": "NightlyMemCheck",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyMemCheck",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyMemCheck.rule",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": []
-    },
     "ExperimentalBuild-Debug-x86_64": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86_64\" ExperimentalBuild",
       "buildType": "debug",
@@ -1460,6 +1440,26 @@
         },
         {
           "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalBuild.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlyMemCheck-Debug-x86_64": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86_64\" NightlyMemCheck",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "x86_64",
+      "artifactName": "NightlyMemCheck",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyMemCheck",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyMemCheck.rule",
           "flagsOrdinal": 5,
           "workingDirectoryOrdinal": 0
         }

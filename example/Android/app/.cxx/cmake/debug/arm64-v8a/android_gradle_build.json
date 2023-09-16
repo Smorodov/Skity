@@ -136,26 +136,6 @@
       ],
       "headers": []
     },
-    "Experimental-Debug-arm64-v8a": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Experimental",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "arm64-v8a",
-      "artifactName": "Experimental",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Experimental",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Experimental.rule",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": []
-    },
     "ContinuousSubmit-Debug-arm64-v8a": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousSubmit",
       "buildType": "debug",
@@ -170,6 +150,26 @@
         },
         {
           "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousSubmit.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "Experimental-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Experimental",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "Experimental",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Experimental",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Experimental.rule",
           "flagsOrdinal": 5,
           "workingDirectoryOrdinal": 0
         }
@@ -196,26 +196,6 @@
       ],
       "headers": []
     },
-    "NightlyTest-Debug-arm64-v8a": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyTest",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "arm64-v8a",
-      "artifactName": "NightlyTest",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyTest",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyTest.rule",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": []
-    },
     "ContinuousConfigure-Debug-arm64-v8a": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousConfigure",
       "buildType": "debug",
@@ -230,6 +210,26 @@
         },
         {
           "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousConfigure.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlyTest-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyTest",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyTest",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyTest",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyTest.rule",
           "flagsOrdinal": 5,
           "workingDirectoryOrdinal": 0
         }
@@ -1022,26 +1022,6 @@
       ],
       "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\freetype\\libfreetyped.a"
     },
-    "ExperimentalConfigure-Debug-arm64-v8a": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalConfigure",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "arm64-v8a",
-      "artifactName": "ExperimentalConfigure",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalConfigure",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalConfigure.rule",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": []
-    },
     "NightlyStart-Debug-arm64-v8a": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyStart",
       "buildType": "debug",
@@ -1056,6 +1036,26 @@
         },
         {
           "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyStart.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "ExperimentalConfigure-Debug-arm64-v8a": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalConfigure",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalConfigure",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalConfigure",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ExperimentalConfigure.rule",
           "flagsOrdinal": 5,
           "workingDirectoryOrdinal": 0
         }

@@ -58,15 +58,15 @@
       "abi": "arm64-v8a",
       "runtimeFiles": []
     },
-    "Experimental-Debug-arm64-v8a": {
-      "artifactName": "Experimental",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Experimental",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
     "ContinuousSubmit-Debug-arm64-v8a": {
       "artifactName": "ContinuousSubmit",
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousSubmit",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "Experimental-Debug-arm64-v8a": {
+      "artifactName": "Experimental",
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Experimental",
       "abi": "arm64-v8a",
       "runtimeFiles": []
     },
@@ -76,15 +76,15 @@
       "abi": "arm64-v8a",
       "runtimeFiles": []
     },
-    "NightlyTest-Debug-arm64-v8a": {
-      "artifactName": "NightlyTest",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyTest",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
     "ContinuousConfigure-Debug-arm64-v8a": {
       "artifactName": "ContinuousConfigure",
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousConfigure",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyTest-Debug-arm64-v8a": {
+      "artifactName": "NightlyTest",
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyTest",
       "abi": "arm64-v8a",
       "runtimeFiles": []
     },
@@ -170,15 +170,15 @@
       "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\freetype\\libfreetyped.a",
       "runtimeFiles": []
     },
-    "ExperimentalConfigure-Debug-arm64-v8a": {
-      "artifactName": "ExperimentalConfigure",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalConfigure",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
     "NightlyStart-Debug-arm64-v8a": {
       "artifactName": "NightlyStart",
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyStart",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalConfigure-Debug-arm64-v8a": {
+      "artifactName": "ExperimentalConfigure",
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalConfigure",
       "abi": "arm64-v8a",
       "runtimeFiles": []
     },

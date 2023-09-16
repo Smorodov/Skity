@@ -28,15 +28,15 @@
   ],
   "buildTargetsCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe  -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
-    "ExperimentalSubmit-Debug-armeabi-v7a": {
-      "artifactName": "ExperimentalSubmit",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ExperimentalSubmit",
-      "abi": "armeabi-v7a",
-      "runtimeFiles": []
-    },
     "ContinuousBuild-Debug-armeabi-v7a": {
       "artifactName": "ContinuousBuild",
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ContinuousBuild",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ExperimentalSubmit-Debug-armeabi-v7a": {
+      "artifactName": "ExperimentalSubmit",
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ExperimentalSubmit",
       "abi": "armeabi-v7a",
       "runtimeFiles": []
     },
@@ -52,17 +52,17 @@
       "abi": "armeabi-v7a",
       "runtimeFiles": []
     },
+    "ContinuousUpdate-Debug-armeabi-v7a": {
+      "artifactName": "ContinuousUpdate",
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ContinuousUpdate",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
     "pugixml-static-Debug-armeabi-v7a": {
       "artifactName": "pugixml-static",
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" pugixml-static",
       "abi": "armeabi-v7a",
       "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\libpugixml.a",
-      "runtimeFiles": []
-    },
-    "ContinuousUpdate-Debug-armeabi-v7a": {
-      "artifactName": "ContinuousUpdate",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ContinuousUpdate",
-      "abi": "armeabi-v7a",
       "runtimeFiles": []
     },
     "freetype-Debug-armeabi-v7a": {
@@ -93,15 +93,15 @@
       "abi": "armeabi-v7a",
       "runtimeFiles": []
     },
-    "ExperimentalMemCheck-Debug-armeabi-v7a": {
-      "artifactName": "ExperimentalMemCheck",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ExperimentalMemCheck",
-      "abi": "armeabi-v7a",
-      "runtimeFiles": []
-    },
     "NightlyStart-Debug-armeabi-v7a": {
       "artifactName": "NightlyStart",
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" NightlyStart",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ExperimentalMemCheck-Debug-armeabi-v7a": {
+      "artifactName": "ExperimentalMemCheck",
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ExperimentalMemCheck",
       "abi": "armeabi-v7a",
       "runtimeFiles": []
     },
@@ -214,15 +214,15 @@
       "abi": "armeabi-v7a",
       "runtimeFiles": []
     },
-    "ContinuousCoverage-Debug-armeabi-v7a": {
-      "artifactName": "ContinuousCoverage",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ContinuousCoverage",
-      "abi": "armeabi-v7a",
-      "runtimeFiles": []
-    },
     "ExperimentalConfigure-Debug-armeabi-v7a": {
       "artifactName": "ExperimentalConfigure",
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ExperimentalConfigure",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ContinuousCoverage-Debug-armeabi-v7a": {
+      "artifactName": "ContinuousCoverage",
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" ContinuousCoverage",
       "abi": "armeabi-v7a",
       "runtimeFiles": []
     },

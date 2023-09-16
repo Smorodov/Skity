@@ -116,26 +116,6 @@
       ],
       "headers": []
     },
-    "NightlyUpdate-Debug-x86": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\" NightlyUpdate",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "x86",
-      "artifactName": "NightlyUpdate",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyUpdate",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyUpdate.rule",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": []
-    },
     "Nightly-Debug-x86": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\" Nightly",
       "buildType": "debug",
@@ -150,6 +130,26 @@
         },
         {
           "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Nightly.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "NightlyUpdate-Debug-x86": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\" NightlyUpdate",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "x86",
+      "artifactName": "NightlyUpdate",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyUpdate",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyUpdate.rule",
           "flagsOrdinal": 5,
           "workingDirectoryOrdinal": 0
         }
@@ -998,26 +998,6 @@
       ],
       "headers": []
     },
-    "Continuous-Debug-x86": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\" Continuous",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "x86",
-      "artifactName": "Continuous",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Continuous",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Continuous.rule",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": []
-    },
     "NightlyStart-Debug-x86": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\" NightlyStart",
       "buildType": "debug",
@@ -1032,6 +1012,26 @@
         },
         {
           "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\NightlyStart.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
+    "Continuous-Debug-x86": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\" Continuous",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "x86",
+      "artifactName": "Continuous",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Continuous",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\Continuous.rule",
           "flagsOrdinal": 5,
           "workingDirectoryOrdinal": 0
         }
@@ -1586,6 +1586,26 @@
       ],
       "headers": []
     },
+    "ContinuousBuild-Debug-x86": {
+      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\" ContinuousBuild",
+      "buildType": "debug",
+      "toolchain": "941764060",
+      "abi": "x86",
+      "artifactName": "ContinuousBuild",
+      "files": [
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousBuild",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousBuild.rule",
+          "flagsOrdinal": 5,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": []
+    },
     "NightlyConfigure-Debug-x86": {
       "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\" NightlyConfigure",
       "buildType": "debug",
@@ -1620,26 +1640,6 @@
         },
         {
           "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousCoverage.rule",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "headers": []
-    },
-    "ContinuousBuild-Debug-x86": {
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\" ContinuousBuild",
-      "buildType": "debug",
-      "toolchain": "941764060",
-      "abi": "x86",
-      "artifactName": "ContinuousBuild",
-      "files": [
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousBuild",
-          "flagsOrdinal": 5,
-          "workingDirectoryOrdinal": 0
-        },
-        {
-          "src": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\CMakeFiles\\ContinuousBuild.rule",
           "flagsOrdinal": 5,
           "workingDirectoryOrdinal": 0
         }
