@@ -1,0 +1,507 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "Z:/AndroidStudioProjects/Skity/build",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						5,
+						6,
+						7
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Z:/AndroidStudioProjects/Skity",
+					"targetIndexes" : 
+					[
+						31
+					]
+				},
+				{
+					"build" : "Z:/AndroidStudioProjects/Skity/build/third_party/freetype",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "Z:/AndroidStudioProjects/Skity/third_party/freetype",
+					"targetIndexes" : 
+					[
+						29
+					]
+				},
+				{
+					"build" : "Z:/AndroidStudioProjects/Skity/build/third_party/glm",
+					"childIndexes" : 
+					[
+						4
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 3,
+					"source" : "Z:/AndroidStudioProjects/Skity/third_party/glm",
+					"targetIndexes" : 
+					[
+						32
+					]
+				},
+				{
+					"build" : "Z:/AndroidStudioProjects/Skity/build/third_party/glm/glm",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "Z:/AndroidStudioProjects/Skity/third_party/glm/glm"
+				},
+				{
+					"build" : "Z:/AndroidStudioProjects/Skity/build/third_party/pugixml",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 4,
+					"source" : "Z:/AndroidStudioProjects/Skity/third_party/pugixml",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						30
+					]
+				},
+				{
+					"build" : "Z:/AndroidStudioProjects/Skity/build/include",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "Z:/AndroidStudioProjects/Skity/include"
+				},
+				{
+					"build" : "Z:/AndroidStudioProjects/Skity/build/src",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "Z:/AndroidStudioProjects/Skity/src"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						6,
+						7
+					],
+					"name" : "Skity",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						31
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "freetype",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						29
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3,
+						4
+					],
+					"name" : "glm",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						32
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "pugixml",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						30
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "Continuous::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-Continuous-Debug-bd50fc4b79b2c41732fa.json",
+					"name" : "Continuous",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ContinuousBuild::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ContinuousBuild-Debug-de4c22c848216931c898.json",
+					"name" : "ContinuousBuild",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ContinuousConfigure::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ContinuousConfigure-Debug-2f0d32c497c42f55c748.json",
+					"name" : "ContinuousConfigure",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ContinuousCoverage::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ContinuousCoverage-Debug-0e72337a2d748cfbaa5b.json",
+					"name" : "ContinuousCoverage",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ContinuousMemCheck::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ContinuousMemCheck-Debug-3be7cf329ef2afc7d440.json",
+					"name" : "ContinuousMemCheck",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ContinuousStart::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ContinuousStart-Debug-f39d0e06725f60187526.json",
+					"name" : "ContinuousStart",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ContinuousSubmit::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ContinuousSubmit-Debug-32d875ac4fc85506ea1e.json",
+					"name" : "ContinuousSubmit",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ContinuousTest::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ContinuousTest-Debug-f14200382b578f4186ad.json",
+					"name" : "ContinuousTest",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ContinuousUpdate::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ContinuousUpdate-Debug-80f99c1a3f5576585d98.json",
+					"name" : "ContinuousUpdate",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Experimental::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-Experimental-Debug-e0f0763c1251ebf3a705.json",
+					"name" : "Experimental",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ExperimentalBuild::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ExperimentalBuild-Debug-8f7c26421c17e51fa6e7.json",
+					"name" : "ExperimentalBuild",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ExperimentalConfigure::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ExperimentalConfigure-Debug-779927502364522ada3f.json",
+					"name" : "ExperimentalConfigure",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ExperimentalCoverage::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ExperimentalCoverage-Debug-cd5c169c953d1793470c.json",
+					"name" : "ExperimentalCoverage",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ExperimentalMemCheck::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ExperimentalMemCheck-Debug-ef347741ce5e0a0c2e61.json",
+					"name" : "ExperimentalMemCheck",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ExperimentalStart::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ExperimentalStart-Debug-170e5c40fb8504c41b61.json",
+					"name" : "ExperimentalStart",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ExperimentalSubmit::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ExperimentalSubmit-Debug-ebaccf6477c14b47ddc7.json",
+					"name" : "ExperimentalSubmit",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ExperimentalTest::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ExperimentalTest-Debug-0787bf919214a508b9b9.json",
+					"name" : "ExperimentalTest",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ExperimentalUpdate::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-ExperimentalUpdate-Debug-4c8abcc3e3480bfd17fc.json",
+					"name" : "ExperimentalUpdate",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GLDemoJni::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GLDemoJni-Debug-da3928cb6b0a7a233b40.json",
+					"name" : "GLDemoJni",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "Nightly::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-Nightly-Debug-bf3fdfa9bb78c5e7ad27.json",
+					"name" : "Nightly",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "NightlyBuild::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-NightlyBuild-Debug-b3bafac2dfa683b00992.json",
+					"name" : "NightlyBuild",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "NightlyConfigure::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-NightlyConfigure-Debug-accfa01a8c2a5b9947c9.json",
+					"name" : "NightlyConfigure",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "NightlyCoverage::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-NightlyCoverage-Debug-0e77536a964aaa757c0c.json",
+					"name" : "NightlyCoverage",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "NightlyMemCheck::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-NightlyMemCheck-Debug-45f7acbaddc3f22edeba.json",
+					"name" : "NightlyMemCheck",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "NightlyMemoryCheck::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-NightlyMemoryCheck-Debug-4ea91e4d1122c4cf34ae.json",
+					"name" : "NightlyMemoryCheck",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "NightlyStart::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-NightlyStart-Debug-e1099f4d7ff966860467.json",
+					"name" : "NightlyStart",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "NightlySubmit::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-NightlySubmit-Debug-8ebd872ee66eb0981491.json",
+					"name" : "NightlySubmit",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "NightlyTest::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-NightlyTest-Debug-c07dd97357f9654dab57.json",
+					"name" : "NightlyTest",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "NightlyUpdate::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-NightlyUpdate-Debug-91804b0d752ebb96d2e4.json",
+					"name" : "NightlyUpdate",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "freetype::@44d369cbb0d080ba8394",
+					"jsonFile" : "target-freetype-Debug-da8002a8b18d8e9d74c5.json",
+					"name" : "freetype",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "pugixml-static::@f4d8f7b89b2835903084",
+					"jsonFile" : "target-pugixml-static-Debug-81a9ddd5ede8844454b9.json",
+					"name" : "pugixml-static",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "skity::@c3442c558c1479434e26",
+					"jsonFile" : "target-skity-Debug-6a44d759ae2c49a6a535.json",
+					"name" : "skity",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "uninstall::@4b2ece3341fca3aa777b",
+					"jsonFile" : "target-uninstall-Debug-8f2e19e31e4f121ada91.json",
+					"name" : "uninstall",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "Z:/AndroidStudioProjects/Skity/example/Android/app/.cxx/Debug/6x535g30/x86",
+		"source" : "Z:/AndroidStudioProjects/Skity/example/Android/app/src/main/jni"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

@@ -1,0 +1,1 @@
+Z:\AndroidStudioProjects\Skity\example\Android\app\build\intermediates\cmake\debug\obj\armeabi-v7a

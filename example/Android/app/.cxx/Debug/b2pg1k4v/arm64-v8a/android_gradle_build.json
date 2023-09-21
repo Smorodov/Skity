@@ -1,0 +1,214 @@
+{
+  "buildFiles": [
+    "Z:\\AndroidStudioProjects\\Skity\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\include\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\src\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+      "-C",
+      "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\Debug\\b2pg1k4v\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+    "-C",
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\Debug\\b2pg1k4v\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "Continuous::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "Continuous"
+    },
+    "ContinuousBuild::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousBuild"
+    },
+    "ContinuousConfigure::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousConfigure"
+    },
+    "ContinuousCoverage::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousCoverage"
+    },
+    "ContinuousMemCheck::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousMemCheck"
+    },
+    "ContinuousStart::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousStart"
+    },
+    "ContinuousSubmit::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousSubmit"
+    },
+    "ContinuousTest::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousTest"
+    },
+    "ContinuousUpdate::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ContinuousUpdate"
+    },
+    "Experimental::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "Experimental"
+    },
+    "ExperimentalBuild::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalBuild"
+    },
+    "ExperimentalConfigure::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalConfigure"
+    },
+    "ExperimentalCoverage::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalCoverage"
+    },
+    "ExperimentalMemCheck::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalMemCheck"
+    },
+    "ExperimentalStart::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalStart"
+    },
+    "ExperimentalSubmit::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalSubmit"
+    },
+    "ExperimentalTest::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalTest"
+    },
+    "ExperimentalUpdate::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ExperimentalUpdate"
+    },
+    "GLDemoJni::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "GLDemoJni",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\b2pg1k4v\\obj\\arm64-v8a\\libGLDemoJni.so",
+      "runtimeFiles": [
+        "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\b2pg1k4v\\obj\\arm64-v8a\\libskity.so"
+      ]
+    },
+    "Nightly::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "Nightly"
+    },
+    "NightlyBuild::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyBuild"
+    },
+    "NightlyConfigure::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyConfigure"
+    },
+    "NightlyCoverage::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyCoverage"
+    },
+    "NightlyMemCheck::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyMemCheck"
+    },
+    "NightlyMemoryCheck::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyMemoryCheck"
+    },
+    "NightlyStart::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyStart"
+    },
+    "NightlySubmit::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlySubmit"
+    },
+    "NightlyTest::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyTest"
+    },
+    "NightlyUpdate::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "NightlyUpdate"
+    },
+    "freetype::@44d369cbb0d080ba8394": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "freetype",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\freetype\\libfreetyped.a"
+    },
+    "pugixml-static::@f4d8f7b89b2835903084": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "pugixml-static",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\libpugixml.a"
+    },
+    "skity::@c3442c558c1479434e26": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "skity",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\b2pg1k4v\\obj\\arm64-v8a\\libskity.so",
+      "runtimeFiles": []
+    },
+    "uninstall::@4b2ece3341fca3aa777b": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "uninstall"
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "Z:\\android\\sdk\\ndk\\19.2.5345600\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "Z:\\android\\sdk\\ndk\\19.2.5345600\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp",
+    "cc"
+  ]
+}

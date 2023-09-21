@@ -1,0 +1,8 @@
+Executable : Z:\android\sdk\cmake\3.18.1\bin\ninja.exe
+arguments : 
+-C
+Z:\AndroidStudioProjects\Skity\example\Android\app\.cxx\cmake\debug\armeabi-v7a
+GLDemoJni
+skity
+jvmArgs : 
+

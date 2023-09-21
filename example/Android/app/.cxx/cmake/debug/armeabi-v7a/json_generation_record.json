@@ -3,42 +3,77 @@
     "level": "INFO",
     "message": "Start JSON generation. Platform version: 21 min SDK version: armeabi-v7a",
     "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
-    "tag": "debug|armeabi-v7a"
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
   },
   {
     "level": "INFO",
-    "message": "Trying to locate CMake in local SDK repository.",
+    "message": "rebuilding JSON Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\android_gradle_build.json due to:",
     "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
-    "tag": "debug|armeabi-v7a"
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
   },
   {
     "level": "INFO",
-    "message": "- CMake found in SDK at \u0027Z:\\android\\sdk\\cmake\\3.18.1\u0027 had version \u00273.18.1\u0027",
+    "message": "- command changed from previous, will remove stale json folder",
     "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
-    "tag": "debug|armeabi-v7a"
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
   },
   {
     "level": "INFO",
-    "message": "CMake \u00273.22.1\u0027 found in SDK did not match requested version \u00273.18.1\u0027.",
+    "message": "removing stale contents from \u0027Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\u0027",
     "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
-    "tag": "debug|armeabi-v7a"
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
   },
   {
     "level": "INFO",
-    "message": "CMake \u00273.6.0\u0027 found in SDK did not match requested version \u00273.18.1\u0027.",
+    "message": "created folder \u0027Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\u0027",
     "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
-    "tag": "debug|armeabi-v7a"
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
   },
   {
     "level": "INFO",
-    "message": "JSON \u0027Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\android_gradle_build.json\u0027 was up-to-date",
+    "message": "executing cmake Executable : Z:\\android\\sdk\\cmake\\3.18.1\\bin\\cmake.exe\narguments : \n-HZ:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\n-DCMAKE_CXX_FLAGS\u003d-std\u003dc++14\n-DCMAKE_FIND_ROOT_PATH\u003dZ:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\prefab\\armeabi-v7a\\prefab\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DCMAKE_TOOLCHAIN_FILE\u003dZ:\\android\\sdk\\ndk\\19.2.5345600\\build\\cmake\\android.toolchain.cmake\n-DANDROID_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003dZ:\\android\\sdk\\ndk\\19.2.5345600\n-DANDROID_PLATFORM\u003dandroid-21\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_NDK\u003dZ:\\android\\sdk\\ndk\\19.2.5345600\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dZ:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dZ:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\n-DCMAKE_MAKE_PROGRAM\u003dZ:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d21\n-DANDROID_STL\u003dc++_shared\n-BZ:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\n-GNinja\njvmArgs : \n\n",
     "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
-    "tag": "debug|armeabi-v7a"
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "Executable : Z:\\android\\sdk\\cmake\\3.18.1\\bin\\cmake.exe\narguments : \n-HZ:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\n-DCMAKE_CXX_FLAGS\u003d-std\u003dc++14\n-DCMAKE_FIND_ROOT_PATH\u003dZ:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\prefab\\armeabi-v7a\\prefab\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DCMAKE_TOOLCHAIN_FILE\u003dZ:\\android\\sdk\\ndk\\19.2.5345600\\build\\cmake\\android.toolchain.cmake\n-DANDROID_ABI\u003darmeabi-v7a\n-DANDROID_NDK\u003dZ:\\android\\sdk\\ndk\\19.2.5345600\n-DANDROID_PLATFORM\u003dandroid-21\n-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a\n-DCMAKE_ANDROID_NDK\u003dZ:\\android\\sdk\\ndk\\19.2.5345600\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dZ:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dZ:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\n-DCMAKE_MAKE_PROGRAM\u003dZ:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d21\n-DANDROID_STL\u003dc++_shared\n-BZ:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\n-GNinja\njvmArgs : \n\n",
+    "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "done executing cmake",
+    "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "deleted unexpected build output Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libc++_shared.so in incremental regenerate",
+    "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
+  },
+  {
+    "level": "INFO",
+    "message": "write command file Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\armeabi-v7a\\build_command.txt",
+    "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
   },
   {
     "level": "INFO",
     "message": "JSON generation completed without problems",
     "file": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
-    "tag": "debug|armeabi-v7a"
+    "tag": "debug|armeabi-v7a",
+    "diagnosticCode": "UNKNOWN"
   }
 ]

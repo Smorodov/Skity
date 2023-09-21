@@ -4,6 +4,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <skity/skity.hpp>
 #include <string>
+#include "entypo.h"
 
 // same as https://fiddle.skia.org/c/@shapes
 static void draw_basic_example(skity::Canvas* canvas) {
@@ -136,7 +137,8 @@ void draw_linear_gradient_example(skity::Canvas* canvas) {
 }
 
 // same as https://fiddle.skia.org/c/@text_rendering
-void draw_simple_text(skity::Canvas* canvas) {
+void draw_simple_text(skity::Canvas* canvas)
+{
   skity::Paint paint;
 
   paint.setTextSize(64.f);
@@ -203,32 +205,99 @@ void draw_even_odd_fill(skity::Canvas* canvas) {
 
   canvas->restore();
 }
+// ---------------------------------------------
+//
+// ---------------------------------------------
+void draw_button(skity::Canvas* canvas, const char* pre_icon, const char* text,
+                 float x, float y, float w, float h, skity::Color col,
+                 std::shared_ptr<skity::Typeface> typeface,
+                 std::shared_ptr<skity::Typeface> typeface_emoji
+                 )
+                 {
+    float corner_radius = h*0.25f;
+    float tw = 0.f, iw = 0.f;
+    skity::Paint paint;
+    paint.setAntiAlias(true);
+    paint.setStyle(skity::Paint::kFill_Style);
+    skity::RRect rrect;
+    rrect.setRectXY(skity::Rect::MakeXYWH(x + 1.f, y + 1.f, w - 2.f, h - 2.f),
+                    corner_radius - 1.f, corner_radius - 1.f);
+    paint.setColor(col);
+    canvas->drawRRect(rrect, paint);
+    {
+        std::array<skity::Color4f, 2> colors{};
+        std::array<skity::Point, 2> pts{};
+        colors[0] = skity::Color4fFromColor(skity::ColorSetARGB(32, 255, 255, 255));
+        colors[1] = skity::Color4fFromColor(skity::ColorSetARGB(32, 0, 0, 0));
+        pts[0] = {x, y, 0, 1};
+        pts[1] = {x, y + h, 0, 1};
+        paint.setShader(
+                skity::Shader::MakeLinear(pts.data(), colors.data(), nullptr, 2));
+    }
+    canvas->drawRRect(rrect, paint);
+    paint.setShader(nullptr);
+    paint.setStyle(skity::Paint::kStroke_Style);
+    // icon color
+    paint.setColor(skity::ColorSetARGB(255, 40, 40, 255));
+    rrect.setRectXY(skity::Rect::MakeXYWH(x + 0.5f, y + 0.5f, w - 1.f, h - 1.f),
+                    corner_radius - 0.5f, corner_radius - 0.5f);
+    canvas->drawRRect(rrect, paint);
+    paint.setStyle(skity::Paint::kFill_Style);
+    paint.setTextSize(h*0.8f);
+    tw = canvas->simpleTextBounds(text, paint).x;
 
-void draw_canvas(skity::Canvas* canvas) {
-  draw_basic_example(canvas);
 
-  canvas->save();
-  canvas->translate(300, 0);
-  draw_path_effect_example(canvas);
-  canvas->restore();
+    if (pre_icon)
+    {
+        canvas->setDefaultTypeface(typeface_emoji);
+        paint.setTextSize(h * 0.8f);
+        iw = canvas->simpleTextBounds(pre_icon, paint).x;
+        canvas->drawSimpleText2(pre_icon, x + w * 0.5f - tw * 0.5f - iw,y + h * 0.75f, paint);
+    }
+    canvas->setDefaultTypeface(typeface);
+    paint.setTextSize(h*0.8f);
+    paint.setColor(skity::ColorSetARGB(255, 255, 255, 255));
 
-  canvas->save();
-  canvas->translate(0, 300);
-  draw_dash_start_example(canvas);
-  canvas->restore();
+    canvas->drawSimpleText2(text, x + w * 0.5f - tw * 0.5f + iw * 0.25f,
+                            y + h * 0.7f - 1.f, paint);
+    paint.setColor(skity::ColorSetARGB(255, 40, 40, 255));
+    canvas->drawSimpleText2(text, x + w * 0.5f - tw * 0.5f + iw * 0.25f,y + h * 0.7f, paint);
 
-  canvas->save();
-  canvas->translate(520, 0);
-  draw_simple_text(canvas);
-  canvas->restore();
 
-  canvas->save();
-  canvas->translate(400, 300);
-  draw_linear_gradient_example(canvas);
-  canvas->restore();
+}
 
-  canvas->save();
-  canvas->translate(800, 0);
-  draw_even_odd_fill(canvas);
-  canvas->restore();
+void clearScreen(skity::Canvas* canvas)
+{
+    skity::Paint paint;
+    paint.setAntiAlias(true);
+    paint.setStyle(skity::Paint::kFill_Style);
+    skity::Rect rect;
+    rect.setXYWH(0,0,canvas->width(),canvas->height());
+    paint.setColor(skity::ColorSetARGB(255, 0, 0, 0));
+    canvas->drawRect(rect, paint);
+}
+
+void draw_point(skity::Canvas* canvas,int x,int y)
+{
+    skity::Paint paint;
+    paint.setAntiAlias(true);
+    paint.setStyle(skity::Paint::kFill_Style);
+    skity::Rect rect;
+    rect.setXYWH(x-50,y-50,100,100);
+    paint.setColor(skity::ColorSetARGB(255, 255, 255, 255));
+    canvas->drawRect(rect, paint);
+}
+
+void draw_canvas(skity::Canvas* canvas,int mx,int my,int mButton,
+                 std::shared_ptr<skity::Typeface> typeface,
+                 std::shared_ptr<skity::Typeface> typeface_emoji
+)
+{
+    clearScreen(canvas);
+draw_point(canvas,mx,my);
+/*
+    draw_button(canvas,"\uF15C","button",0,0,500,100,
+                skity::ColorSetARGB(255, 55, 255, 55),
+                typeface,typeface_emoji
+                );*/
 }

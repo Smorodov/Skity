@@ -1,235 +1,201 @@
 {
   "buildFiles": [
-    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
-    "Z:\\android\\sdk\\ndk\\19.2.5345600\\build\\cmake\\android.toolchain.cmake",
-    "Z:\\android\\sdk\\ndk\\19.2.5345600\\build\\cmake\\platforms.cmake",
     "Z:\\AndroidStudioProjects\\Skity\\CMakeLists.txt",
-    "Z:\\AndroidStudioProjects\\Skity\\cmake\\Platform.cmake",
-    "Z:\\AndroidStudioProjects\\Skity\\cmake\\CommonDep.cmake",
-    "Z:\\AndroidStudioProjects\\Skity\\cmake\\Options.cmake",
-    "Z:\\AndroidStudioProjects\\Skity\\cmake\\Shader.cmake",
-    "Z:\\AndroidStudioProjects\\Skity\\cmake\\ThirdPartyDep.cmake",
-    "Z:\\AndroidStudioProjects\\Skity\\cmake\\Config.cmake.in",
-    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\CMakeLists.txt",
-    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\builds\\cmake\\FindHarfBuzz.cmake",
-    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\builds\\cmake\\FindBrotliDec.cmake",
-    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\CMakeLists.txt",
-    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\cmake\\cmake_uninstall.cmake.in",
-    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\glm\\CMakeLists.txt",
-    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\CMakeLists.txt",
-    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\scripts\\pugixml-config.cmake.in",
-    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\scripts\\pugixml.pc.in",
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
     "Z:\\AndroidStudioProjects\\Skity\\include\\CMakeLists.txt",
-    "Z:\\AndroidStudioProjects\\Skity\\include\\skity\\config.hpp.in",
-    "Z:\\AndroidStudioProjects\\Skity\\src\\CMakeLists.txt"
+    "Z:\\AndroidStudioProjects\\Skity\\src\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\CMakeLists.txt"
   ],
-  "cleanCommands": [
-    "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" clean"
+  "cleanCommandsComponents": [
+    [
+      "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+      "-C",
+      "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a",
+      "clean"
+    ]
   ],
-  "buildTargetsCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe  -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommandComponents": [
+    "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+    "-C",
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
   "libraries": {
-    "NightlyCoverage-Debug-arm64-v8a": {
-      "artifactName": "NightlyCoverage",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyCoverage",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "uninstall-Debug-arm64-v8a": {
-      "artifactName": "uninstall",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" uninstall",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "NightlyUpdate-Debug-arm64-v8a": {
-      "artifactName": "NightlyUpdate",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyUpdate",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "NightlyConfigure-Debug-arm64-v8a": {
-      "artifactName": "NightlyConfigure",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyConfigure",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ContinuousTest-Debug-arm64-v8a": {
-      "artifactName": "ContinuousTest",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousTest",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ContinuousSubmit-Debug-arm64-v8a": {
-      "artifactName": "ContinuousSubmit",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousSubmit",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "Experimental-Debug-arm64-v8a": {
-      "artifactName": "Experimental",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Experimental",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ContinuousCoverage-Debug-arm64-v8a": {
-      "artifactName": "ContinuousCoverage",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousCoverage",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ContinuousConfigure-Debug-arm64-v8a": {
-      "artifactName": "ContinuousConfigure",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousConfigure",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "NightlyTest-Debug-arm64-v8a": {
-      "artifactName": "NightlyTest",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyTest",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ContinuousMemCheck-Debug-arm64-v8a": {
-      "artifactName": "ContinuousMemCheck",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousMemCheck",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "NightlySubmit-Debug-arm64-v8a": {
-      "artifactName": "NightlySubmit",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlySubmit",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ExperimentalStart-Debug-arm64-v8a": {
-      "artifactName": "ExperimentalStart",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalStart",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "Continuous-Debug-arm64-v8a": {
-      "artifactName": "Continuous",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Continuous",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "Nightly-Debug-arm64-v8a": {
+    "Nightly::@f4d8f7b89b2835903084": {
       "artifactName": "Nightly",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" Nightly",
       "abi": "arm64-v8a",
       "runtimeFiles": []
     },
-    "ContinuousUpdate-Debug-arm64-v8a": {
+    "NightlySubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlySubmit",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyBuild",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousSubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousSubmit",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "freetype::@44d369cbb0d080ba8394": {
+      "artifactName": "freetype",
+      "abi": "arm64-v8a",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\freetype\\libfreetyped.a",
+      "runtimeFiles": []
+    },
+    "NightlyConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyConfigure",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyMemCheck",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyStart::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyStart",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "Continuous::@f4d8f7b89b2835903084": {
+      "artifactName": "Continuous",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousUpdate::@f4d8f7b89b2835903084": {
       "artifactName": "ContinuousUpdate",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousUpdate",
       "abi": "arm64-v8a",
       "runtimeFiles": []
     },
-    "GLDemoJni-Debug-arm64-v8a": {
+    "ExperimentalUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalUpdate",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "GLDemoJni::@6890427a1f51a3e7e1df": {
       "artifactName": "GLDemoJni",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" GLDemoJni",
       "abi": "arm64-v8a",
       "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libGLDemoJni.so",
       "runtimeFiles": [
         "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libskity.so"
       ]
     },
-    "ContinuousStart-Debug-arm64-v8a": {
-      "artifactName": "ContinuousStart",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousStart",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "NightlyMemCheck-Debug-arm64-v8a": {
-      "artifactName": "NightlyMemCheck",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyMemCheck",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ExperimentalCoverage-Debug-arm64-v8a": {
-      "artifactName": "ExperimentalCoverage",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalCoverage",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "NightlyBuild-Debug-arm64-v8a": {
-      "artifactName": "NightlyBuild",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyBuild",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ExperimentalBuild-Debug-arm64-v8a": {
-      "artifactName": "ExperimentalBuild",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalBuild",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "freetype-Debug-arm64-v8a": {
-      "artifactName": "freetype",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" freetype",
-      "abi": "arm64-v8a",
-      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\freetype\\libfreetyped.a",
-      "runtimeFiles": []
-    },
-    "NightlyStart-Debug-arm64-v8a": {
-      "artifactName": "NightlyStart",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyStart",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ExperimentalConfigure-Debug-arm64-v8a": {
-      "artifactName": "ExperimentalConfigure",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalConfigure",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ExperimentalSubmit-Debug-arm64-v8a": {
-      "artifactName": "ExperimentalSubmit",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalSubmit",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ContinuousBuild-Debug-arm64-v8a": {
-      "artifactName": "ContinuousBuild",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ContinuousBuild",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ExperimentalTest-Debug-arm64-v8a": {
-      "artifactName": "ExperimentalTest",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalTest",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ExperimentalMemCheck-Debug-arm64-v8a": {
-      "artifactName": "ExperimentalMemCheck",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalMemCheck",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ExperimentalUpdate-Debug-arm64-v8a": {
-      "artifactName": "ExperimentalUpdate",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" ExperimentalUpdate",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "NightlyMemoryCheck-Debug-arm64-v8a": {
+    "NightlyMemoryCheck::@f4d8f7b89b2835903084": {
       "artifactName": "NightlyMemoryCheck",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" NightlyMemoryCheck",
       "abi": "arm64-v8a",
       "runtimeFiles": []
     },
-    "skity-Debug-arm64-v8a": {
+    "ContinuousBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousBuild",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalMemCheck",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "Experimental::@f4d8f7b89b2835903084": {
+      "artifactName": "Experimental",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousConfigure",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalBuild",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousCoverage",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "uninstall::@4b2ece3341fca3aa777b": {
+      "artifactName": "uninstall",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "skity::@c3442c558c1479434e26": {
       "artifactName": "skity",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" skity",
       "abi": "arm64-v8a",
       "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libskity.so",
+      "runtimeFiles": [
+        "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\-Wl,-Bstatic",
+        "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\\-Wl,-Bdynamic"
+      ]
+    },
+    "ContinuousMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousMemCheck",
+      "abi": "arm64-v8a",
       "runtimeFiles": []
     },
-    "pugixml-static-Debug-arm64-v8a": {
+    "ContinuousTest::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousTest",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyCoverage",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalStart::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalStart",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalCoverage",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyUpdate",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalSubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalSubmit",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousStart::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousStart",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalTest::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalTest",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyTest::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyTest",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "pugixml-static::@f4d8f7b89b2835903084": {
       "artifactName": "pugixml-static",
-      "buildCommand": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe -C \"Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\arm64-v8a\" pugixml-static",
       "abi": "arm64-v8a",
       "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\libpugixml.a",
+      "runtimeFiles": []
+    },
+    "ExperimentalConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalConfigure",
+      "abi": "arm64-v8a",
       "runtimeFiles": []
     }
   }

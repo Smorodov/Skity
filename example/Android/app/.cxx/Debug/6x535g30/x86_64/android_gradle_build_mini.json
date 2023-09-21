@@ -1,0 +1,199 @@
+{
+  "buildFiles": [
+    "Z:\\AndroidStudioProjects\\Skity\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\include\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\src\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+      "-C",
+      "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\Debug\\6x535g30\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+    "-C",
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\Debug\\6x535g30\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "Nightly::@f4d8f7b89b2835903084": {
+      "artifactName": "Nightly",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "NightlySubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlySubmit",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "NightlyBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyBuild",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ContinuousSubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousSubmit",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "freetype::@44d369cbb0d080ba8394": {
+      "artifactName": "freetype",
+      "abi": "x86_64",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\freetype\\libfreetyped.a",
+      "runtimeFiles": []
+    },
+    "NightlyConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyConfigure",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "NightlyMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyMemCheck",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "NightlyStart::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyStart",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "Continuous::@f4d8f7b89b2835903084": {
+      "artifactName": "Continuous",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ContinuousUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousUpdate",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ExperimentalUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalUpdate",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "GLDemoJni::@6890427a1f51a3e7e1df": {
+      "artifactName": "GLDemoJni",
+      "abi": "x86_64",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\6x535g30\\obj\\x86_64\\libGLDemoJni.so",
+      "runtimeFiles": [
+        "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\6x535g30\\obj\\x86_64\\libskity.so"
+      ]
+    },
+    "NightlyMemoryCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyMemoryCheck",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ContinuousBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousBuild",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ExperimentalMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalMemCheck",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "Experimental::@f4d8f7b89b2835903084": {
+      "artifactName": "Experimental",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ContinuousConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousConfigure",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ExperimentalBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalBuild",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ContinuousCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousCoverage",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "uninstall::@4b2ece3341fca3aa777b": {
+      "artifactName": "uninstall",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "skity::@c3442c558c1479434e26": {
+      "artifactName": "skity",
+      "abi": "x86_64",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\6x535g30\\obj\\x86_64\\libskity.so",
+      "runtimeFiles": []
+    },
+    "ContinuousMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousMemCheck",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ContinuousTest::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousTest",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "NightlyCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyCoverage",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ExperimentalStart::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalStart",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ExperimentalCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalCoverage",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "NightlyUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyUpdate",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ExperimentalSubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalSubmit",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ContinuousStart::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousStart",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "ExperimentalTest::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalTest",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "NightlyTest::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyTest",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    },
+    "pugixml-static::@f4d8f7b89b2835903084": {
+      "artifactName": "pugixml-static",
+      "abi": "x86_64",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\libpugixml.a",
+      "runtimeFiles": []
+    },
+    "ExperimentalConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalConfigure",
+      "abi": "x86_64",
+      "runtimeFiles": []
+    }
+  }
+}

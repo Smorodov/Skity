@@ -8,37 +8,37 @@
 //
 
 //implements in example.cc
-void draw_canvas(skity::Canvas* canvas);
+void draw_canvas(skity::Canvas* canvas,int mx,int my,int mButton,std::shared_ptr<skity::Typeface> typeface,std::shared_ptr<skity::Typeface> typefface_emoji);
+//void render_frame(skity::Canvas* canvas, std::shared_ptr<skity::Typeface> const& typeface);
+int mx=0;
+int my=0;
+int mButton=0;
 
 class GLExample{
 public:
-    explicit GLExample(int wid, int hei){
+
+    explicit GLExample(int wid, int hei)
+    {
         assert(wid > 0 && hei > 0);
         skity::GPUContext ctx{skity::GPUBackendType::kOpenGL,
                               (void*)eglGetProcAddress};
         mCanvas = skity::Canvas::MakeHardwareAccelationCanvas(wid,hei,1, &ctx);
-        mCanvas->setDefaultTypeface(
-                skity::Typeface::MakeFromFile("/sdcard/SkityDemo/Roboto Mono Nerd Font Complete.ttf"));
+        typeface = skity::Typeface::MakeFromFile("/sdcard/SkityDemo/Roboto Mono Nerd Font Complete.ttf");
+        emoji_typeface =  skity::Typeface::MakeFromFile("/sdcard/SkityDemo/entypo.ttf");
+        mCanvas->setDefaultTypeface(typeface);
+        //mCanvas->setDefaultTypeface(skity::Typeface::MakeFromFile("/sdcard/SkityDemo/Roboto Mono Nerd Font Complete.ttf"));
     }
 
     void Render(){
-
-//        skity::Paint paint;
-//        paint.setFillColor({0.0,1.0,0.0,1.0});
-//        paint.setAlphaF(1);
-//        paint.setStyle(skity::Paint::kFill_Style);
-//
-//        skity::Path path;
-//        path.addRect({00,00,300,300});
-//        mCanvas->drawPath(path,paint);
-//        mCanvas->flush();
-
-        draw_canvas(mCanvas.get());
+        draw_canvas(mCanvas.get(),mx,my,mButton,typeface,emoji_typeface);
+        // render_frame(mCanvas.get(), mCanvas->getDefaultTypeface() );
         mCanvas->flush();
     }
 
 protected:
     std::unique_ptr<skity::Canvas> mCanvas;
+    std::shared_ptr<skity::Typeface> typeface;
+    std::shared_ptr<skity::Typeface> emoji_typeface;
 };
 
 
@@ -61,4 +61,28 @@ Java_com_example_skitydemo_MainActivity_ReleaseGLExample(JNIEnv *env, jobject th
                                                          jlong instance) {
     GLExample *example = (GLExample*)instance;
     delete example;
+}
+//-------------------------------
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_skitydemo_MainActivity_PressHandle(JNIEnv *env, jobject thiz,jint x,jint y)
+{
+    mx=x;
+    my=y;
+    mButton=1;
+}
+
+//-------------------------------
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_skitydemo_MainActivity_ReleaseHandle(JNIEnv *env, jobject thiz,jint x,jint y)
+{
+    mx=x;
+    my=y;
+    mButton=0;
+}
+//-------------------------------
+extern "C" JNIEXPORT void JNICALL
+Java_com_example_skitydemo_MainActivity_MoveHandle(JNIEnv *env, jobject thiz,jint x,jint y)
+{
+    mx=x;
+    my=y;
 }

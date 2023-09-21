@@ -1,0 +1,199 @@
+{
+  "buildFiles": [
+    "Z:\\AndroidStudioProjects\\Skity\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\include\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\src\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+      "-C",
+      "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\Debug\\6x535g30\\armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+    "-C",
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\Debug\\6x535g30\\armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "Nightly::@f4d8f7b89b2835903084": {
+      "artifactName": "Nightly",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "NightlySubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlySubmit",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "NightlyBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyBuild",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ContinuousSubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousSubmit",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "freetype::@44d369cbb0d080ba8394": {
+      "artifactName": "freetype",
+      "abi": "armeabi-v7a",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\freetype\\libfreetyped.a",
+      "runtimeFiles": []
+    },
+    "NightlyConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyConfigure",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "NightlyMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyMemCheck",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "NightlyStart::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyStart",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "Continuous::@f4d8f7b89b2835903084": {
+      "artifactName": "Continuous",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ContinuousUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousUpdate",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ExperimentalUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalUpdate",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "GLDemoJni::@6890427a1f51a3e7e1df": {
+      "artifactName": "GLDemoJni",
+      "abi": "armeabi-v7a",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\6x535g30\\obj\\armeabi-v7a\\libGLDemoJni.so",
+      "runtimeFiles": [
+        "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\6x535g30\\obj\\armeabi-v7a\\libskity.so"
+      ]
+    },
+    "NightlyMemoryCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyMemoryCheck",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ContinuousBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousBuild",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ExperimentalMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalMemCheck",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "Experimental::@f4d8f7b89b2835903084": {
+      "artifactName": "Experimental",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ContinuousConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousConfigure",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ExperimentalBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalBuild",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ContinuousCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousCoverage",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "uninstall::@4b2ece3341fca3aa777b": {
+      "artifactName": "uninstall",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "skity::@c3442c558c1479434e26": {
+      "artifactName": "skity",
+      "abi": "armeabi-v7a",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\6x535g30\\obj\\armeabi-v7a\\libskity.so",
+      "runtimeFiles": []
+    },
+    "ContinuousMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousMemCheck",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ContinuousTest::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousTest",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "NightlyCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyCoverage",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ExperimentalStart::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalStart",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ExperimentalCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalCoverage",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "NightlyUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyUpdate",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ExperimentalSubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalSubmit",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ContinuousStart::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousStart",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "ExperimentalTest::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalTest",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "NightlyTest::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyTest",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    },
+    "pugixml-static::@f4d8f7b89b2835903084": {
+      "artifactName": "pugixml-static",
+      "abi": "armeabi-v7a",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\libpugixml.a",
+      "runtimeFiles": []
+    },
+    "ExperimentalConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalConfigure",
+      "abi": "armeabi-v7a",
+      "runtimeFiles": []
+    }
+  }
+}

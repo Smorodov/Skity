@@ -1,0 +1,199 @@
+{
+  "buildFiles": [
+    "Z:\\AndroidStudioProjects\\Skity\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\include\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\src\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\freetype\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\glm\\glm\\CMakeLists.txt",
+    "Z:\\AndroidStudioProjects\\Skity\\third_party\\pugixml\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+      "-C",
+      "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\Debug\\b2pg1k4v\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+    "-C",
+    "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\Debug\\b2pg1k4v\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "Nightly::@f4d8f7b89b2835903084": {
+      "artifactName": "Nightly",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlySubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlySubmit",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyBuild",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousSubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousSubmit",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "freetype::@44d369cbb0d080ba8394": {
+      "artifactName": "freetype",
+      "abi": "arm64-v8a",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\freetype\\libfreetyped.a",
+      "runtimeFiles": []
+    },
+    "NightlyConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyConfigure",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyMemCheck",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyStart::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyStart",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "Continuous::@f4d8f7b89b2835903084": {
+      "artifactName": "Continuous",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousUpdate",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalUpdate",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "GLDemoJni::@6890427a1f51a3e7e1df": {
+      "artifactName": "GLDemoJni",
+      "abi": "arm64-v8a",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\b2pg1k4v\\obj\\arm64-v8a\\libGLDemoJni.so",
+      "runtimeFiles": [
+        "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\b2pg1k4v\\obj\\arm64-v8a\\libskity.so"
+      ]
+    },
+    "NightlyMemoryCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyMemoryCheck",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousBuild",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalMemCheck",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "Experimental::@f4d8f7b89b2835903084": {
+      "artifactName": "Experimental",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousConfigure",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalBuild::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalBuild",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousCoverage",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "uninstall::@4b2ece3341fca3aa777b": {
+      "artifactName": "uninstall",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "skity::@c3442c558c1479434e26": {
+      "artifactName": "skity",
+      "abi": "arm64-v8a",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cxx\\Debug\\b2pg1k4v\\obj\\arm64-v8a\\libskity.so",
+      "runtimeFiles": []
+    },
+    "ContinuousMemCheck::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousMemCheck",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousTest::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousTest",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyCoverage",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalStart::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalStart",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalCoverage::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalCoverage",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyUpdate::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyUpdate",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalSubmit::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalSubmit",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ContinuousStart::@f4d8f7b89b2835903084": {
+      "artifactName": "ContinuousStart",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "ExperimentalTest::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalTest",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "NightlyTest::@f4d8f7b89b2835903084": {
+      "artifactName": "NightlyTest",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "pugixml-static::@f4d8f7b89b2835903084": {
+      "artifactName": "pugixml-static",
+      "abi": "arm64-v8a",
+      "output": "Z:\\AndroidStudioProjects\\Skity\\build\\third_party\\pugixml\\libpugixml.a",
+      "runtimeFiles": []
+    },
+    "ExperimentalConfigure::@f4d8f7b89b2835903084": {
+      "artifactName": "ExperimentalConfigure",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,13 +1,17 @@
 {
   "abi": "X86",
-  "abiPlatformVersion": 21,
-  "buildSettings": {
-    "environmentVariables": []
+  "info": {
+    "abi": "X86",
+    "bitness": 32,
+    "deprecated": false,
+    "default": true
   },
+  "originalCxxBuildFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86",
+  "cxxBuildFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86",
+  "abiPlatformVersion": 21,
   "cmake": {
-    "cmakeArtifactsBaseFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86",
-    "cmakeServerLogFile": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\\cmake_server_log.txt",
     "cmakeWrappingBaseFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cxx\\debug\\x86",
+    "cmakeArtifactsBaseFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -64,6 +68,10 @@
           "value": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\x86"
         },
         {
+          "name": "CMAKE_RUNTIME_OUTPUT_DIRECTORY",
+          "value": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj\\x86"
+        },
+        {
           "name": "CMAKE_MAKE_PROGRAM",
           "value": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe"
         },
@@ -80,50 +88,72 @@
           "value": "c++_shared"
         }
       ]
-    }
+    },
+    "cmakeServerLogFile": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86\\cmake_server_log.txt"
   },
-  "cxxBuildFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86",
-  "info": {
-    "abi": "X86",
-    "bitness": 32,
-    "deprecated": false,
-    "default": true
-  },
-  "originalCxxBuildFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\x86",
   "variant": {
     "buildSystemArgumentList": [
       "-DANDROID_STL\u003dc++_shared"
     ],
-    "buildTargetSet": [],
-    "implicitBuildTargetSet": [],
     "cFlagsList": [],
-    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
     "cppFlagsList": [
       "",
       "-std\u003dc++14"
     ],
+    "variantName": "debug",
+    "objFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj",
+    "soFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\lib",
     "isDebuggableEnabled": true,
+    "validAbiList": [
+      "X86"
+    ],
+    "buildTargetSet": [],
+    "implicitBuildTargetSet": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
     "module": {
-      "buildSystem": "CMAKE",
-      "cmake": {
-        "cmakeExe": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\cmake.exe",
-        "minimumCmakeVersion": "3.18.1",
-        "ninjaExe": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe"
-      },
-      "cmakeToolchainFile": "Z:\\android\\sdk\\ndk\\19.2.5345600\\build\\cmake\\android.toolchain.cmake",
       "cxxFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx",
-      "gradleModulePathName": ":app",
+      "splitsAbiFilterSet": [],
       "intermediatesFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates",
-      "makeFile": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
-      "moduleBuildFile": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build.gradle",
+      "gradleModulePathName": ":app",
       "moduleRootFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app",
+      "moduleBuildFile": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build.gradle",
+      "makeFile": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\src\\main\\jni\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "ndkFolder": "Z:\\android\\sdk\\ndk\\19.2.5345600",
+      "ndkVersion": "19.2.5345600",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
         "X86",
         "X86_64"
       ],
-      "ndkFolder": "Z:\\android\\sdk\\ndk\\19.2.5345600",
+      "ndkDefaultStl": "LIBCXX_STATIC",
+      "ndkMetaPlatforms": {
+        "min": 16,
+        "max": 28,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28
+        }
+      },
       "ndkMetaAbiList": [
         {
           "abi": "ARMEABI_V7A",
@@ -150,46 +180,15 @@
           "default": true
         }
       ],
-      "ndkMetaPlatforms": {
-        "min": 16,
-        "max": 28,
-        "aliases": {
-          "20": 19,
-          "25": 24,
-          "J": 16,
-          "J-MR1": 17,
-          "J-MR2": 18,
-          "K": 19,
-          "L": 21,
-          "L-MR1": 22,
-          "M": 23,
-          "N": 24,
-          "N-MR1": 24,
-          "O": 26,
-          "O-MR1": 27,
-          "P": 28
-        }
+      "originalCmakeToolchainFile": "Z:\\android\\sdk\\ndk\\19.2.5345600\\build\\cmake\\android.toolchain.cmake",
+      "cmakeToolchainFile": "Z:\\android\\sdk\\ndk\\19.2.5345600\\build\\cmake\\android.toolchain.cmake",
+      "cmake": {
+        "isValidCmakeAvailable": true,
+        "cmakeExe": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\cmake.exe",
+        "minimumCmakeVersion": "3.18.1",
+        "ninjaExe": "Z:\\android\\sdk\\cmake\\3.18.1\\bin\\ninja.exe",
+        "isPreferCmakeFileApiEnabled": true
       },
-      "ndkSupportedAbiList": [
-        "ARMEABI_V7A",
-        "ARM64_V8A",
-        "X86",
-        "X86_64"
-      ],
-      "ndkDefaultStl": "LIBCXX_STATIC",
-      "ndkVersion": "19.2.5345600",
-      "project": {
-        "compilerSettingsCacheFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\.cxx",
-        "cxxFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\.cxx",
-        "ideBuildTargetAbi": "x86,armeabi-v7a,armeabi",
-        "isBuildOnlyTargetAbiEnabled": true,
-        "isCmakeBuildCohabitationEnabled": false,
-        "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android",
-        "sdkFolder": "Z:\\android\\sdk",
-        "isPrefabEnabled": false
-      },
-      "splitsAbiFilterSet": [],
       "stlSharedObjectMap": {
         "LIBCXX_SHARED": {
           "ARMEABI_V7A": "Z:\\android\\sdk\\ndk\\19.2.5345600\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
@@ -200,15 +199,25 @@
         "LIBCXX_STATIC": {},
         "NONE": {},
         "SYSTEM": {}
-      }
+      },
+      "project": {
+        "rootBuildGradleFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android",
+        "cxxFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\.cxx",
+        "compilerSettingsCacheFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\.cxx",
+        "sdkFolder": "Z:\\android\\sdk",
+        "isNativeCompilerSettingsCacheEnabled": false,
+        "isBuildOnlyTargetAbiEnabled": true,
+        "ideBuildTargetAbi": "x86",
+        "isCmakeBuildCohabitationEnabled": false,
+        "isPrefabEnabled": false,
+        "isV2NativeModelEnabled": true
+      },
+      "nativeBuildOutputLevel": "QUIET"
     },
-    "objFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\build\\intermediates\\cmake\\debug\\obj",
-    "variantName": "debug",
-    "validAbiList": [
-      "X86"
-    ],
-    "prefabDirectory": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\prefab",
-    "prefabPackageDirectoryList": []
+    "prefabDirectory": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\prefab"
+  },
+  "buildSettings": {
+    "environmentVariables": []
   },
   "prefabFolder": "Z:\\AndroidStudioProjects\\Skity\\example\\Android\\app\\.cxx\\cmake\\debug\\prefab\\x86"
 }

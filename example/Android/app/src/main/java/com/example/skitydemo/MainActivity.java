@@ -9,6 +9,7 @@ import android.opengl.GLSurfaceView;
 import android.os.Bundle;
 
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.View;
 
@@ -46,6 +47,43 @@ public class MainActivity extends Activity implements GLSurfaceView.Renderer {
     }
 
     @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        // https://developer.android.com/develop/ui/views/graphics/opengl/touch#java
+        int[] location = new int[2];
+        mGlSurfaceView.getLocationOnScreen(location);
+        int x0 = location[0];
+        int y0 = location[1];
+
+        float x=0;
+        float y=0;
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_MOVE:
+
+                x = event.getX()-x0;
+                y = event.getY()-y0;
+
+                MoveHandle((int)(x),(int)(y) );
+
+                break;
+                case MotionEvent.ACTION_DOWN:
+                    x = event.getX()-x0;
+                    y = event.getY()-y0;;
+
+                    PressHandle((int)(x),(int)(y));
+                    break;
+            case MotionEvent.ACTION_UP:
+                x = event.getX()-x0;
+                y = event.getY()-y0;;
+
+                ReleaseHandle((int)(x),(int)(y) );
+                break;
+
+        }
+
+        return super.onTouchEvent(event);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -62,7 +100,7 @@ public class MainActivity extends Activity implements GLSurfaceView.Renderer {
 
     @Override
     public void onSurfaceCreated(GL10 var1, EGLConfig var2) {
-        Log.e("tag", "onSurfaceCreated");
+        //Log.e("tag", "onSurfaceCreated");
     }
 
     @Override
@@ -86,7 +124,7 @@ public class MainActivity extends Activity implements GLSurfaceView.Renderer {
         }
         GLES32.glDisable(GLES32.GL_STENCIL_TEST);
         GLES32.glDisable(GLES32.GL_BLEND);
-        Log.e("tag", "onDrawFrame");
+        //Log.e("tag", "onDrawFrame");
     }
 
     @Override
@@ -173,4 +211,8 @@ public class MainActivity extends Activity implements GLSurfaceView.Renderer {
     private native void RunGLExample(long instance);
 
     private native void ReleaseGLExample(long instance);
+
+    private native void PressHandle(int x, int y);
+    private native void ReleaseHandle(int x, int y);
+    private native void MoveHandle(int x, int y);
 }

@@ -1,0 +1,8 @@
+Z:\AndroidStudioProjects\Skity\CMakeLists.txt
+Z:\AndroidStudioProjects\Skity\example\Android\app\src\main\jni\CMakeLists.txt
+Z:\AndroidStudioProjects\Skity\include\CMakeLists.txt
+Z:\AndroidStudioProjects\Skity\src\CMakeLists.txt
+Z:\AndroidStudioProjects\Skity\third_party\freetype\CMakeLists.txt
+Z:\AndroidStudioProjects\Skity\third_party\glm\CMakeLists.txt
+Z:\AndroidStudioProjects\Skity\third_party\glm\glm\CMakeLists.txt
+Z:\AndroidStudioProjects\Skity\third_party\pugixml\CMakeLists.txt
